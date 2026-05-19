@@ -1,0 +1,1001 @@
+ID_Paquete,Cliente,Ciudad_Destino,Peso_kg,Volumen_m3,Deposito_Origen,Ruta,Km_Total,Num_Paradas
+1,José Mari Amat,Neiva,52.26,0.75,Ibague,Ibague -> Neiva,211.0,1
+2,Paca Ureña,Ibagué,52.31,0.46,,NO EXISTE EN GRAFO,,0
+3,Clementina Vicenta Herranz Fuentes,Ibagué,79.24,2.64,,NO EXISTE EN GRAFO,,0
+4,Nicolasa Candela Falcón Suárez,Tunja,75.66,2.23,Bogota,Bogota -> Tunja,139.0,1
+5,Iván Carranza Gabaldón,Neiva,18.88,1.94,Ibague,Ibague -> Neiva,211.0,1
+6,Edmundo del Daza,Neiva,72.26,0.96,Ibague,Ibague -> Neiva,211.0,1
+7,Hilario Viñas Segarra,Bucaramanga,56.25,1.65,Bucaramanga,Bucaramanga,0.0,0
+8,Dionisia Ramírez-Haro,Pereira,27.15,0.54,Pereira,Pereira,0.0,0
+9,Rafa Ocaña-Roma,Cali,2.24,1.86,Bogota,Bogota -> Cali,458.0,1
+10,Severo Guitart Lluch,Cali,19.27,2.21,Bogota,Bogota -> Cali,458.0,1
+11,Gerónimo José Antonio Méndez Quero,Neiva,33.76,2.5,Ibague,Ibague -> Neiva,211.0,1
+12,Felipa Castellanos Planas,Bogotá,70.49,2.45,,NO EXISTE EN GRAFO,,0
+13,Aitana Antúnez Gelabert,Pasto,2.71,2.04,Bogota,Bogota -> Cali -> Pasto,844.0,2
+14,Loreto Ballester,Ibagué,54.35,0.66,,NO EXISTE EN GRAFO,,0
+15,Rodolfo Pi Rivera,Ibagué,67.35,1.96,,NO EXISTE EN GRAFO,,0
+16,Rosario Rivero Alcolea,Pereira,32.46,0.96,Pereira,Pereira,0.0,0
+17,Bernardo Conde,Armenia,17.58,2.17,Ibague,Ibague -> Armenia,5.4,1
+18,Victoriano Sanchez-Farré,Tunja,9.27,1.67,Bogota,Bogota -> Tunja,139.0,1
+19,José Ángel Cortés,Ibagué,24.58,0.67,,NO EXISTE EN GRAFO,,0
+20,Manolo de Alvarez,Bucaramanga,25.89,1.27,Bucaramanga,Bucaramanga,0.0,0
+21,Federico Duarte Manrique,Pasto,27.68,0.72,Bogota,Bogota -> Cali -> Pasto,844.0,2
+22,Felipe Fernandez Malo,Medellín,15.25,2.17,,NO EXISTE EN GRAFO,,0
+23,Ernesto del Pinedo,Villavicencio,66.64,2.49,Bogota,Bogota -> Villavicencio,123.0,1
+24,Samanta Carmona Alcalde,Tunja,40.63,2.74,Bogota,Bogota -> Tunja,139.0,1
+25,Arsenio Ribera Azcona,Bucaramanga,64.49,2.8,Bucaramanga,Bucaramanga,0.0,0
+26,Galo Sola Cortés,Cali,54.6,2.49,Bogota,Bogota -> Cali,458.0,1
+27,Esther Mayo Olivera,Bogotá,36.36,0.44,,NO EXISTE EN GRAFO,,0
+28,Urbano Salinas-Perera,Bogotá,58.37,2.65,,NO EXISTE EN GRAFO,,0
+29,Josefa Javiera Andrade Sandoval,Armenia,11.05,1.87,Ibague,Ibague -> Armenia,5.4,1
+30,Emperatriz Alfaro Baena,Pereira,28.45,2.85,Pereira,Pereira,0.0,0
+31,Purificación Torrents-Montoya,Villavicencio,40.16,1.26,Bogota,Bogota -> Villavicencio,123.0,1
+32,Benjamín Valdés Bermejo,Santa Marta,12.49,0.56,,NO EXISTE EN GRAFO,,0
+33,Tatiana Gelabert Román,Barranquilla,39.58,0.56,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+34,Trinidad Carrasco,Ibagué,64.47,0.83,,NO EXISTE EN GRAFO,,0
+35,Omar Arias Galiano,Pasto,70.59,1.31,Bogota,Bogota -> Cali -> Pasto,844.0,2
+36,Ágata Giménez Verdugo,Barranquilla,32.01,1.18,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+37,Gilberto Castells-Poza,Pereira,47.97,0.77,Pereira,Pereira,0.0,0
+38,Eutimio Maza,Pereira,26.35,0.18,Pereira,Pereira,0.0,0
+39,Nando Bueno Carro,Barranquilla,77.61,1.39,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+40,Maximiano Valentín Bautista Castañeda,Villavicencio,67.39,0.86,Bogota,Bogota -> Villavicencio,123.0,1
+41,Isaac del Mármol,Barranquilla,78.63,1.66,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+42,Amaro del Guillen,Pereira,60.22,1.19,Pereira,Pereira,0.0,0
+43,Berta Casas Pol,Pereira,68.58,2.28,Pereira,Pereira,0.0,0
+44,Juan Luis Valera Blasco,Pasto,20.67,0.88,Bogota,Bogota -> Cali -> Pasto,844.0,2
+45,Rafa Bernal Egea,Tunja,78.74,0.78,Bogota,Bogota -> Tunja,139.0,1
+46,Florina Gibert Blanch,Ibagué,46.7,2.12,,NO EXISTE EN GRAFO,,0
+47,Armida Olivera Jódar,Bogotá,53.58,1.87,,NO EXISTE EN GRAFO,,0
+48,Carmela Batlle Calderon,Pereira,53.58,0.95,Pereira,Pereira,0.0,0
+49,Olimpia Torre-Cózar,Armenia,44.78,1.31,Ibague,Ibague -> Armenia,5.4,1
+50,Jose Angel del Saez,Cali,47.37,0.31,Bogota,Bogota -> Cali,458.0,1
+51,Calisto Rueda Bertrán,Ibagué,45.69,0.03,,NO EXISTE EN GRAFO,,0
+52,Francisco López Valenciano,Bogotá,37.94,1.43,,NO EXISTE EN GRAFO,,0
+53,Felipe Luz Comas,Bogotá,74.14,1.14,,NO EXISTE EN GRAFO,,0
+54,Amada Escribano,Villavicencio,20.94,0.97,Bogota,Bogota -> Villavicencio,123.0,1
+55,Martina Gras-Verdugo,Bogotá,75.6,0.5,,NO EXISTE EN GRAFO,,0
+56,Balduino Matas-Espada,Cartagena,0.41,2.42,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+57,Petrona de Belda,Bucaramanga,2.41,2.05,Bucaramanga,Bucaramanga,0.0,0
+58,Emiliano Méndez Barrios,Bogotá,77.29,1.9,,NO EXISTE EN GRAFO,,0
+59,Victorino Llano Garriga,Bogotá,54.88,2.28,,NO EXISTE EN GRAFO,,0
+60,Celestina Portillo,Santa Marta,57.99,1.54,,NO EXISTE EN GRAFO,,0
+61,Eladio Gálvez Barros,Barranquilla,76.83,0.37,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+62,Rómulo Ureña Beltrán,Manizales,73.35,0.54,Ibague,Ibague -> Manizales,163.0,1
+63,Benito Vélez-Zurita,Armenia,44.65,2.29,Ibague,Ibague -> Armenia,5.4,1
+64,César Álvarez Arnaiz,Ibagué,31.68,1.16,,NO EXISTE EN GRAFO,,0
+65,Amada de Aragón,Ibagué,28.56,0.29,,NO EXISTE EN GRAFO,,0
+66,Edu García Anaya,Ibagué,66.75,0.26,,NO EXISTE EN GRAFO,,0
+67,Palmira Calatayud Giménez,Armenia,45.03,0.21,Ibague,Ibague -> Armenia,5.4,1
+68,Jose Ramón Pla,Cali,22.48,2.36,Bogota,Bogota -> Cali,458.0,1
+69,Graciano Bertrán Coll,Armenia,66.4,1.84,Ibague,Ibague -> Armenia,5.4,1
+70,Gerardo Alemán Borrell,Bogotá,44.84,2.02,,NO EXISTE EN GRAFO,,0
+71,Gema Vargas-Yáñez,Santa Marta,22.75,2.68,,NO EXISTE EN GRAFO,,0
+72,Angélica Menéndez-Arribas,Manizales,48.83,2.07,Ibague,Ibague -> Manizales,163.0,1
+73,Gustavo Pascual Vizcaíno,Bogotá,48.16,0.27,,NO EXISTE EN GRAFO,,0
+74,Silvia Mariscal,Santa Marta,79.01,0.84,,NO EXISTE EN GRAFO,,0
+75,Nicodemo del Ferrera,Barranquilla,9.39,1.77,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+76,Nereida Gil Burgos,Bogotá,21.87,1.05,,NO EXISTE EN GRAFO,,0
+77,Herminio Iborra,Barranquilla,41.51,0.44,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+78,Clemente Novoa Vizcaíno,Manizales,38.55,0.32,Ibague,Ibague -> Manizales,163.0,1
+79,Juanito Amo Belda,Santa Marta,73.17,1.1,,NO EXISTE EN GRAFO,,0
+80,Modesto Noriega Figueroa,Bogotá,65.94,2.08,,NO EXISTE EN GRAFO,,0
+81,Gonzalo Echevarría Lluch,Manizales,33.73,1.83,Ibague,Ibague -> Manizales,163.0,1
+82,Bienvenida Aliaga Madrid,Medellín,44.86,1.95,,NO EXISTE EN GRAFO,,0
+83,Cayetana Boix,Barranquilla,41.93,0.36,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+84,León Agullo Barriga,Manizales,39.15,1.81,Ibague,Ibague -> Manizales,163.0,1
+85,Clementina Vicens Roura,Ibagué,60.5,2.5,,NO EXISTE EN GRAFO,,0
+86,Ariel Carolina Giner Pazos,Pereira,79.69,2.57,Pereira,Pereira,0.0,0
+87,Calista Campillo Feliu,Pereira,8.02,0.08,Pereira,Pereira,0.0,0
+88,Aura Torrijos Navarro,Cartagena,51.43,1.59,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+89,Pacífica de Molins,Santa Marta,17.66,0.94,,NO EXISTE EN GRAFO,,0
+90,Leonel del Durán,Barranquilla,46.49,1.73,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+91,Rico Borja Escamilla,Armenia,75.07,1.73,Ibague,Ibague -> Armenia,5.4,1
+92,Aitana Mariscal Chaparro,Barranquilla,63.52,0.79,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+93,Graciano Bernat,Bogotá,39.49,2.14,,NO EXISTE EN GRAFO,,0
+94,Salomé Sureda Mateos,Cali,61.83,1.65,Bogota,Bogota -> Cali,458.0,1
+95,Mario Jerez,Tunja,56.46,0.8,Bogota,Bogota -> Tunja,139.0,1
+96,Alejandra Vicente Oliveras,Pereira,13.32,1.99,Pereira,Pereira,0.0,0
+97,Claudio Leonel Cervantes Lopez,Neiva,16.86,0.27,Ibague,Ibague -> Neiva,211.0,1
+98,Sergio Artigas Sabater,Armenia,47.04,0.06,Ibague,Ibague -> Armenia,5.4,1
+99,Jeremías Nieto Jordán,Medellín,18.17,2.98,,NO EXISTE EN GRAFO,,0
+100,Rosa María Casanova-Iñiguez,Ibagué,43.01,1.87,,NO EXISTE EN GRAFO,,0
+101,Salvador Codina Mulet,Santa Marta,79.3,2.1,,NO EXISTE EN GRAFO,,0
+102,Arturo Jáuregui Albero,Santa Marta,50.92,2.36,,NO EXISTE EN GRAFO,,0
+103,Jose Ramón Sandalio Oller Salas,Tunja,68.04,0.68,Bogota,Bogota -> Tunja,139.0,1
+104,Baudelio Marti-Valls,Pereira,49.24,1.34,Pereira,Pereira,0.0,0
+105,Lidia Cervera Valero,Tunja,30.51,0.24,Bogota,Bogota -> Tunja,139.0,1
+106,Juana Adoración Roda Vallés,Pasto,21.25,2.68,Bogota,Bogota -> Cali -> Pasto,844.0,2
+107,Carina del Torralba,Bogotá,2.04,1.82,,NO EXISTE EN GRAFO,,0
+108,Felix Mariño Roca,Cartagena,3.39,1.32,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+109,Bruno Duran Acedo,Santa Marta,13.25,1.89,,NO EXISTE EN GRAFO,,0
+110,Hernando del Galan,Tunja,27.25,2.44,Bogota,Bogota -> Tunja,139.0,1
+111,Magdalena Pedrosa Tapia,Villavicencio,66.52,2.79,Bogota,Bogota -> Villavicencio,123.0,1
+112,Cristóbal Pomares Olmedo,Barranquilla,38.6,0.06,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+113,Noemí Murcia Moraleda,Bogotá,32.55,0.76,,NO EXISTE EN GRAFO,,0
+114,Antonia Recio Campoy,Ibagué,51.58,0.52,,NO EXISTE EN GRAFO,,0
+115,Curro Villar Grau,Cali,71.22,1.2,Bogota,Bogota -> Cali,458.0,1
+116,Maxi Riquelme-Vives,Manizales,78.74,1.36,Ibague,Ibague -> Manizales,163.0,1
+117,Hilda del Garay,Cartagena,34.41,2.28,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+118,Casemiro Miguel Carpio,Tunja,36.47,2.35,Bogota,Bogota -> Tunja,139.0,1
+119,Brígida Vara Aguirre,Santa Marta,45.96,0.42,,NO EXISTE EN GRAFO,,0
+120,Mar Palomino Piquer,Armenia,24.75,2.69,Ibague,Ibague -> Armenia,5.4,1
+121,Rocío Adadia-Hervás,Pereira,44.24,0.53,Pereira,Pereira,0.0,0
+122,Omar Valderrama Palma,Cali,26.77,0.94,Bogota,Bogota -> Cali,458.0,1
+123,Gilberto Losa Machado,Medellín,57.69,0.78,,NO EXISTE EN GRAFO,,0
+124,Dorotea Sánchez Ángel,Medellín,26.93,1.88,,NO EXISTE EN GRAFO,,0
+125,Candela Nogueira-Manzano,Cali,32.59,0.63,Bogota,Bogota -> Cali,458.0,1
+126,Fabián Eloy Cerezo Soto,Bogotá,32.36,1.84,,NO EXISTE EN GRAFO,,0
+127,Ana Sofía Sacristán Cases,Ibagué,33.94,2.76,,NO EXISTE EN GRAFO,,0
+128,Sara Alberola,Manizales,45.53,0.35,Ibague,Ibague -> Manizales,163.0,1
+129,Amor Salom Alonso,Cali,64.71,1.37,Bogota,Bogota -> Cali,458.0,1
+130,Carmelo Rivas Vilaplana,Pasto,15.75,2.16,Bogota,Bogota -> Cali -> Pasto,844.0,2
+131,Xiomara Fabiola Rodríguez Pino,Cali,52.21,1.46,Bogota,Bogota -> Cali,458.0,1
+132,Áurea Perez Almagro,Ibagué,44.76,0.95,,NO EXISTE EN GRAFO,,0
+133,Paloma Gabaldón Calvet,Pasto,3.81,2.5,Bogota,Bogota -> Cali -> Pasto,844.0,2
+134,Mateo Alonso Morera Romero,Villavicencio,54.53,2.92,Bogota,Bogota -> Villavicencio,123.0,1
+135,Rosenda Acedo Carballo,Pereira,47.55,0.51,Pereira,Pereira,0.0,0
+136,María Cristina Arenas Echevarría,Cartagena,55.75,0.66,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+137,Guadalupe Fabregat,Bucaramanga,35.93,1.94,Bucaramanga,Bucaramanga,0.0,0
+138,Enrique Losa Mancebo,Villavicencio,29.52,1.18,Bogota,Bogota -> Villavicencio,123.0,1
+139,Andrés Felipe Carnero Coloma,Santa Marta,39.48,1.17,,NO EXISTE EN GRAFO,,0
+140,Martín Alcalá Pombo,Manizales,57.2,1.04,Ibague,Ibague -> Manizales,163.0,1
+141,Natividad Barros-Figueras,Pasto,19.41,2.64,Bogota,Bogota -> Cali -> Pasto,844.0,2
+142,Josué Arco Martorell,Bogotá,58.99,0.56,,NO EXISTE EN GRAFO,,0
+143,Esperanza Tapia,Pereira,79.96,2.57,Pereira,Pereira,0.0,0
+144,Dalila Balaguer-Téllez,Ibagué,16.78,1.55,,NO EXISTE EN GRAFO,,0
+145,Hugo Mur Vazquez,Barranquilla,9.34,1.76,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+146,Maricela Luisina Cal Company,Villavicencio,64.91,1.54,Bogota,Bogota -> Villavicencio,123.0,1
+147,Amanda Castilla González,Medellín,45.69,1.93,,NO EXISTE EN GRAFO,,0
+148,Leyre Débora Nicolau Coronado,Barranquilla,63.01,0.4,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+149,Javier Arana Merino,Neiva,37.68,1.54,Ibague,Ibague -> Neiva,211.0,1
+150,Adora Valcárcel Flor,Medellín,17.62,2.75,,NO EXISTE EN GRAFO,,0
+151,Andrea Bárcena Bejarano,Cartagena,74.6,0.96,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+152,Almudena de Mur,Armenia,25.72,1.58,Ibague,Ibague -> Armenia,5.4,1
+153,Edgardo Ángel Navarrete,Manizales,57.5,1.94,Ibague,Ibague -> Manizales,163.0,1
+154,Paloma Patricia Carballo Egea,Tunja,54.46,0.3,Bogota,Bogota -> Tunja,139.0,1
+155,Manolo Iñiguez Mármol,Barranquilla,18.62,0.87,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+156,Dionisia Gascón Berrocal,Barranquilla,41.9,2.04,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+157,Luis Valcárcel Lago,Manizales,40.74,1.58,Ibague,Ibague -> Manizales,163.0,1
+158,Dulce Porras-Rosa,Medellín,53.91,2.26,,NO EXISTE EN GRAFO,,0
+159,Florina Paredes Garmendia,Tunja,11.54,0.04,Bogota,Bogota -> Tunja,139.0,1
+160,Clímaco Andreu,Manizales,36.36,2.09,Ibague,Ibague -> Manizales,163.0,1
+161,Jeremías Galan-Macías,Ibagué,51.58,1.59,,NO EXISTE EN GRAFO,,0
+162,Maricruz Alondra Salinas Puig,Pasto,75.16,1.95,Bogota,Bogota -> Cali -> Pasto,844.0,2
+163,Néstor Palacios Madrid,Cartagena,0.43,0.32,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+164,Olga Pujadas Ureña,Barranquilla,58.36,2.85,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+165,Arturo Sastre Ibáñez,Ibagué,62.12,2.95,,NO EXISTE EN GRAFO,,0
+166,Pepe Gil Arellano,Pasto,58.35,2.95,Bogota,Bogota -> Cali -> Pasto,844.0,2
+167,Jose Miguel Andreu Bayo,Pasto,52.58,0.63,Bogota,Bogota -> Cali -> Pasto,844.0,2
+168,Purificación Montenegro Trujillo,Bogotá,39.09,0.22,,NO EXISTE EN GRAFO,,0
+169,José María Segura Moll,Pereira,25.58,1.15,Pereira,Pereira,0.0,0
+170,África García Canet,Cali,23.51,1.52,Bogota,Bogota -> Cali,458.0,1
+171,Vito Rodríguez Duarte,Barranquilla,17.86,2.52,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+172,Alejo Acedo Naranjo,Barranquilla,49.8,1.91,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+173,Saturnina Carreño-Rueda,Bogotá,71.85,2.74,,NO EXISTE EN GRAFO,,0
+174,Kike Báez Giner,Armenia,52.04,2.25,Ibague,Ibague -> Armenia,5.4,1
+175,Jacobo Murillo Seguí,Bucaramanga,23.98,0.35,Bucaramanga,Bucaramanga,0.0,0
+176,Apolinar Villar-Bello,Bogotá,69.89,1.13,,NO EXISTE EN GRAFO,,0
+177,María Ángeles Almansa Carreño,Manizales,56.66,1.01,Ibague,Ibague -> Manizales,163.0,1
+178,Rafael Ayala Grande,Cartagena,65.62,1.95,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+179,Jordana Molina Jordá,Ibagué,53.63,0.29,,NO EXISTE EN GRAFO,,0
+180,Anita Amat Moreno,Villavicencio,6.23,0.5,Bogota,Bogota -> Villavicencio,123.0,1
+181,Apolonia de Salamanca,Pereira,69.48,2.8,Pereira,Pereira,0.0,0
+182,Édgar del Riba,Bogotá,37.39,1.46,,NO EXISTE EN GRAFO,,0
+183,Tadeo del Grande,Ibagué,2.14,1.27,,NO EXISTE EN GRAFO,,0
+184,Fátima Andrés Río,Medellín,60.51,1.23,,NO EXISTE EN GRAFO,,0
+185,Belen Bayona Soto,Tunja,61.97,1.81,Bogota,Bogota -> Tunja,139.0,1
+186,Leocadia Puga Carretero,Manizales,68.92,1.06,Ibague,Ibague -> Manizales,163.0,1
+187,Lidia Oller Montenegro,Cartagena,37.29,1.07,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+188,Mateo de Amor,Armenia,76.32,1.71,Ibague,Ibague -> Armenia,5.4,1
+189,Alondra Marta Perales Cáceres,Barranquilla,54.68,2.7,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+190,Epifanio Eligio Tejedor Ugarte,Manizales,20.64,1.49,Ibague,Ibague -> Manizales,163.0,1
+191,Hernando Sáenz Quesada,Pereira,63.17,0.94,Pereira,Pereira,0.0,0
+192,Candelario Vendrell Agustí,Cartagena,34.51,0.82,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+193,Isaías Márquez Guzmán,Bucaramanga,24.9,2.36,Bucaramanga,Bucaramanga,0.0,0
+194,Flor Gisbert Villalobos,Pereira,44.99,1.44,Pereira,Pereira,0.0,0
+195,Leonardo Beltrán Guzman,Bogotá,18.53,2.37,,NO EXISTE EN GRAFO,,0
+196,Elpidio Cuesta Malo,Santa Marta,71.03,1.69,,NO EXISTE EN GRAFO,,0
+197,Vito Ferreras Palomar,Armenia,7.88,1.91,Ibague,Ibague -> Armenia,5.4,1
+198,Delfina Arévalo Rodriguez,Pereira,6.49,1.83,Pereira,Pereira,0.0,0
+199,Alonso Pont-Garcés,Manizales,41.5,2.19,Ibague,Ibague -> Manizales,163.0,1
+200,Diego Esparza,Barranquilla,39.65,1.74,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+201,Juan Francisco del Benet,Cali,78.07,1.11,Bogota,Bogota -> Cali,458.0,1
+202,Seve Granados Ariño,Barranquilla,6.19,0.14,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+203,Francisco Jose Muro-Cabo,Bucaramanga,48.04,2.12,Bucaramanga,Bucaramanga,0.0,0
+204,Salud Batlle Amorós,Pasto,45.2,2.33,Bogota,Bogota -> Cali -> Pasto,844.0,2
+205,Arturo Mendez Bolaños,Tunja,4.3,0.08,Bogota,Bogota -> Tunja,139.0,1
+206,Dulce Herranz Priego,Pereira,54.74,2.59,Pereira,Pereira,0.0,0
+207,Toño Gelabert Solera,Tunja,77.29,0.51,Bogota,Bogota -> Tunja,139.0,1
+208,Fabricio Carnero Salas,Armenia,19.98,2.24,Ibague,Ibague -> Armenia,5.4,1
+209,Bruno Armengol Llabrés,Villavicencio,78.9,1.41,Bogota,Bogota -> Villavicencio,123.0,1
+210,Roberta Barreda,Medellín,33.23,1.89,,NO EXISTE EN GRAFO,,0
+211,Obdulia Antúnez Cuervo,Ibagué,32.41,1.5,,NO EXISTE EN GRAFO,,0
+212,Joaquín Lucas Franch España,Manizales,12.28,0.48,Ibague,Ibague -> Manizales,163.0,1
+213,Teo del Aguirre,Santa Marta,62.9,2.34,,NO EXISTE EN GRAFO,,0
+214,Amparo Molins Maldonado,Villavicencio,10.58,2.83,Bogota,Bogota -> Villavicencio,123.0,1
+215,Azahar Lladó Mayo,Tunja,63.14,2.79,Bogota,Bogota -> Tunja,139.0,1
+216,Custodia Galvez Calderón,Bucaramanga,69.47,2.83,Bucaramanga,Bucaramanga,0.0,0
+217,Natividad Eusebia Navas Zapata,Bogotá,42.08,1.65,,NO EXISTE EN GRAFO,,0
+218,Vidal Gascón Cabezas,Neiva,30.45,1.52,Ibague,Ibague -> Neiva,211.0,1
+219,Jordana Barriga Dalmau,Bucaramanga,66.47,0.9,Bucaramanga,Bucaramanga,0.0,0
+220,Ángeles Gil Casanovas,Pasto,36.45,2.6,Bogota,Bogota -> Cali -> Pasto,844.0,2
+221,Adelina Laguna Llopis,Villavicencio,10.75,0.05,Bogota,Bogota -> Villavicencio,123.0,1
+222,Yaiza Mateo Montesinos,Villavicencio,13.72,1.25,Bogota,Bogota -> Villavicencio,123.0,1
+223,Roque Ortuño Rivero,Pereira,57.46,1.34,Pereira,Pereira,0.0,0
+224,Felicidad Sarmiento Castro,Neiva,43.62,0.39,Ibague,Ibague -> Neiva,211.0,1
+225,Brunilda del Bayón,Medellín,33.09,1.33,,NO EXISTE EN GRAFO,,0
+226,Jimena Benavent-Mate,Villavicencio,29.84,0.17,Bogota,Bogota -> Villavicencio,123.0,1
+227,Marta Martínez Cabañas,Ibagué,9.47,2.22,,NO EXISTE EN GRAFO,,0
+228,Ana Belén Guijarro Escobar,Barranquilla,13.21,1.8,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+229,Cayetano Royo Guerrero,Tunja,24.74,2.83,Bogota,Bogota -> Tunja,139.0,1
+230,Agustina Font Blazquez,Cali,37.06,2.36,Bogota,Bogota -> Cali,458.0,1
+231,Isaías Bustamante Jaén,Manizales,26.11,1.63,Ibague,Ibague -> Manizales,163.0,1
+232,Ximena Paniagua Nicolás,Villavicencio,12.32,1.63,Bogota,Bogota -> Villavicencio,123.0,1
+233,Tere de Azcona,Pasto,46.49,0.69,Bogota,Bogota -> Cali -> Pasto,844.0,2
+234,Anselma Morán,Medellín,21.31,1.45,,NO EXISTE EN GRAFO,,0
+235,Juliana de Almeida,Medellín,38.21,2.83,,NO EXISTE EN GRAFO,,0
+236,Efraín Gámez Lladó,Neiva,30.32,0.36,Ibague,Ibague -> Neiva,211.0,1
+237,Nazario Josué Ramis Barral,Villavicencio,64.35,0.18,Bogota,Bogota -> Villavicencio,123.0,1
+238,Blanca Soria-Real,Pereira,64.19,0.63,Pereira,Pereira,0.0,0
+239,Consuelo Gilabert Barba,Santa Marta,57.39,1.15,,NO EXISTE EN GRAFO,,0
+240,Agustín Haroldo Zabaleta Montero,Santa Marta,5.17,0.12,,NO EXISTE EN GRAFO,,0
+241,Manolo Miró-Reina,Pereira,36.76,2.61,Pereira,Pereira,0.0,0
+242,Lara Dora Velasco Reyes,Pereira,60.58,0.4,Pereira,Pereira,0.0,0
+243,Antonio Vilalta,Pasto,61.9,2.04,Bogota,Bogota -> Cali -> Pasto,844.0,2
+244,Fabián Alemán Catalá,Tunja,25.24,2.23,Bogota,Bogota -> Tunja,139.0,1
+245,Judith del Muro,Armenia,64.0,2.62,Ibague,Ibague -> Armenia,5.4,1
+246,Clarisa Egea Rovira,Barranquilla,79.94,0.22,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+247,Fernanda Donaire Llorens,Ibagué,30.26,0.1,,NO EXISTE EN GRAFO,,0
+248,Martirio Loreto Revilla Salom,Neiva,68.78,1.84,Ibague,Ibague -> Neiva,211.0,1
+249,Adora del Trillo,Santa Marta,15.98,0.31,,NO EXISTE EN GRAFO,,0
+250,Paulino Maestre,Tunja,73.17,1.07,Bogota,Bogota -> Tunja,139.0,1
+251,Obdulia Rosa Sevillano Samper,Tunja,9.4,0.22,Bogota,Bogota -> Tunja,139.0,1
+252,María Belén de Paredes,Cali,22.35,1.0,Bogota,Bogota -> Cali,458.0,1
+253,Clímaco Morell,Armenia,54.77,2.38,Ibague,Ibague -> Armenia,5.4,1
+254,Hernando Torres-Gilabert,Bogotá,37.32,2.26,,NO EXISTE EN GRAFO,,0
+255,Gustavo Samper Gámez,Tunja,70.08,1.56,Bogota,Bogota -> Tunja,139.0,1
+256,Isaías Peña Donaire,Ibagué,32.9,1.49,,NO EXISTE EN GRAFO,,0
+257,Martin Mendizábal Tenorio,Pasto,13.86,2.93,Bogota,Bogota -> Cali -> Pasto,844.0,2
+258,Soledad Valderrama Gómez,Manizales,46.29,0.68,Ibague,Ibague -> Manizales,163.0,1
+259,Jimena Clavero,Tunja,51.34,1.79,Bogota,Bogota -> Tunja,139.0,1
+260,Benito del Escribano,Medellín,18.77,1.25,,NO EXISTE EN GRAFO,,0
+261,Luisa Almeida Guillen,Cartagena,77.74,0.98,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+262,Ildefonso de Soria,Medellín,41.79,1.02,,NO EXISTE EN GRAFO,,0
+263,Emma Mármol Alberdi,Barranquilla,77.3,2.53,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+264,Antonio Villalobos Diaz,Villavicencio,50.27,1.25,Bogota,Bogota -> Villavicencio,123.0,1
+265,Ema Baquero Tomas,Pereira,41.73,1.44,Pereira,Pereira,0.0,0
+266,Prudencio Palacios Benavent,Santa Marta,28.52,1.36,,NO EXISTE EN GRAFO,,0
+267,Graciano Salgado-Maldonado,Manizales,77.27,0.59,Ibague,Ibague -> Manizales,163.0,1
+268,Luciana Checa Montaña,Tunja,57.32,0.54,Bogota,Bogota -> Tunja,139.0,1
+269,Mirta de Ariño,Armenia,17.97,2.81,Ibague,Ibague -> Armenia,5.4,1
+270,Miguel Castelló Fajardo,Medellín,32.24,0.12,,NO EXISTE EN GRAFO,,0
+271,Maximiano Fuster Reyes,Cali,4.05,1.39,Bogota,Bogota -> Cali,458.0,1
+272,Narciso Galvez Ferrero,Cartagena,55.1,0.91,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+273,Montserrat Benavent Ayllón,Cartagena,16.33,1.79,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+274,Amor Colom Durán,Pasto,45.15,1.81,Bogota,Bogota -> Cali -> Pasto,844.0,2
+275,Domingo Sandoval-Vélez,Bogotá,25.6,2.38,,NO EXISTE EN GRAFO,,0
+276,Ariel Coloma Agullo,Pereira,17.84,0.05,Pereira,Pereira,0.0,0
+277,Filomena de Riba,Bucaramanga,12.36,2.97,Bucaramanga,Bucaramanga,0.0,0
+278,Azahar Simó Cerdán,Bucaramanga,69.52,2.75,Bucaramanga,Bucaramanga,0.0,0
+279,Luciano Corbacho Agudo,Cali,50.21,1.54,Bogota,Bogota -> Cali,458.0,1
+280,Pío Saavedra,Santa Marta,46.52,2.88,,NO EXISTE EN GRAFO,,0
+281,Juan Manuel de Acevedo,Medellín,6.43,0.37,,NO EXISTE EN GRAFO,,0
+282,Ruperta Pinedo Falcón,Barranquilla,59.19,2.02,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+283,Natividad Fortuny Oliva,Medellín,8.93,1.12,,NO EXISTE EN GRAFO,,0
+284,Maribel Esteve Arcos,Villavicencio,57.91,1.05,Bogota,Bogota -> Villavicencio,123.0,1
+285,Eligio Benavent Ocaña,Pasto,53.96,1.5,Bogota,Bogota -> Cali -> Pasto,844.0,2
+286,Francisco Riba Llano,Bucaramanga,9.34,2.34,Bucaramanga,Bucaramanga,0.0,0
+287,Nicolás Flores Noriega,Neiva,3.31,2.53,Ibague,Ibague -> Neiva,211.0,1
+288,Selena Macías,Tunja,54.29,2.53,Bogota,Bogota -> Tunja,139.0,1
+289,Dora Ramirez Laguna,Tunja,5.21,2.85,Bogota,Bogota -> Tunja,139.0,1
+290,Tadeo Llorens,Santa Marta,17.71,0.42,,NO EXISTE EN GRAFO,,0
+291,Ulises Beltran,Pereira,72.48,2.53,Pereira,Pereira,0.0,0
+292,Valero Jerez Aznar,Manizales,53.16,2.44,Ibague,Ibague -> Manizales,163.0,1
+293,Herberto Ponce Peñas,Armenia,76.12,1.45,Ibague,Ibague -> Armenia,5.4,1
+294,Ibán Juan José Cruz Calleja,Santa Marta,26.49,1.09,,NO EXISTE EN GRAFO,,0
+295,Eladio Córdoba Díaz,Bogotá,12.6,2.93,,NO EXISTE EN GRAFO,,0
+296,Maura Arrieta Riquelme,Pasto,74.33,1.7,Bogota,Bogota -> Cali -> Pasto,844.0,2
+297,Virginia de Verdejo,Tunja,78.1,1.41,Bogota,Bogota -> Tunja,139.0,1
+298,René Naranjo,Villavicencio,47.11,0.63,Bogota,Bogota -> Villavicencio,123.0,1
+299,Marianela Susanita Lluch Arellano,Bogotá,79.08,1.99,,NO EXISTE EN GRAFO,,0
+300,Mateo Chucho Verdú Cuéllar,Villavicencio,48.71,0.25,Bogota,Bogota -> Villavicencio,123.0,1
+301,Íngrid Riquelme Garriga,Ibagué,37.12,1.43,,NO EXISTE EN GRAFO,,0
+302,Anacleto Sebastián Pedro Iriarte,Barranquilla,22.98,1.5,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+303,Maxi Sastre,Bucaramanga,10.55,2.03,Bucaramanga,Bucaramanga,0.0,0
+304,Rosaura Vera Alberola,Villavicencio,27.54,2.21,Bogota,Bogota -> Villavicencio,123.0,1
+305,Milagros Yáñez,Bogotá,57.27,0.36,,NO EXISTE EN GRAFO,,0
+306,Salomón Vilalta Clavero,Bucaramanga,2.49,1.96,Bucaramanga,Bucaramanga,0.0,0
+307,Ibán Pardo Salazar,Barranquilla,73.02,2.17,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+308,Evaristo Jove,Medellín,78.73,2.45,,NO EXISTE EN GRAFO,,0
+309,Nilo Campillo Feliu,Tunja,36.97,2.29,Bogota,Bogota -> Tunja,139.0,1
+310,Jorge Velasco Gutiérrez,Manizales,75.23,0.96,Ibague,Ibague -> Manizales,163.0,1
+311,Emelina Palacio Leon,Villavicencio,4.25,1.25,Bogota,Bogota -> Villavicencio,123.0,1
+312,Lucila Revilla Gonzalo,Bucaramanga,52.69,2.25,Bucaramanga,Bucaramanga,0.0,0
+313,Susanita Bernal Rocha,Barranquilla,11.52,1.31,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+314,Tomasa Andrade Alsina,Manizales,25.95,0.77,Ibague,Ibague -> Manizales,163.0,1
+315,Noelia Fonseca-Borrego,Neiva,49.83,2.08,Ibague,Ibague -> Neiva,211.0,1
+316,Goyo Teruel-Portero,Bogotá,11.81,0.69,,NO EXISTE EN GRAFO,,0
+317,Cristian Isaías Abellán Abril,Cartagena,22.02,2.27,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+318,Eloy Salas,Barranquilla,61.58,1.48,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+319,Vanesa Aparicio,Santa Marta,5.4,2.21,,NO EXISTE EN GRAFO,,0
+320,Hipólito Farré Maestre,Armenia,49.41,1.5,Ibague,Ibague -> Armenia,5.4,1
+321,Candelaria Múñiz,Villavicencio,72.16,1.74,Bogota,Bogota -> Villavicencio,123.0,1
+322,Erasmo Romeu Franch,Manizales,64.22,0.29,Ibague,Ibague -> Manizales,163.0,1
+323,Micaela Palomo-Criado,Barranquilla,69.53,2.61,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+324,Ester Riera,Manizales,21.36,0.46,Ibague,Ibague -> Manizales,163.0,1
+325,Guillermo Garay Belmonte,Bogotá,27.4,1.4,,NO EXISTE EN GRAFO,,0
+326,Rosendo Rosselló,Medellín,52.74,1.69,,NO EXISTE EN GRAFO,,0
+327,Carmina Gallardo,Barranquilla,16.14,1.53,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+328,Graciela Anglada Beltran,Villavicencio,73.65,0.78,Bogota,Bogota -> Villavicencio,123.0,1
+329,Miguel Noguera Torrecilla,Pasto,49.07,2.11,Bogota,Bogota -> Cali -> Pasto,844.0,2
+330,Coral María Luisa Chaparro Pina,Tunja,17.92,1.87,Bogota,Bogota -> Tunja,139.0,1
+331,Juana Oller Naranjo,Pasto,50.59,2.55,Bogota,Bogota -> Cali -> Pasto,844.0,2
+332,Violeta Bermejo Alcolea,Barranquilla,52.12,1.26,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+333,Mamen Río,Armenia,12.76,0.62,Ibague,Ibague -> Armenia,5.4,1
+334,Milagros Martí Suarez,Barranquilla,31.26,0.69,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+335,Bienvenida Duque Santamaría,Santa Marta,64.65,0.7,,NO EXISTE EN GRAFO,,0
+336,Marino Folch,Bucaramanga,16.4,2.25,Bucaramanga,Bucaramanga,0.0,0
+337,Macaria Roma Cardona,Bucaramanga,73.96,1.57,Bucaramanga,Bucaramanga,0.0,0
+338,Casandra Alemany Prieto,Medellín,32.21,2.12,,NO EXISTE EN GRAFO,,0
+339,Vicenta Carvajal Llorens,Pereira,6.25,0.42,Pereira,Pereira,0.0,0
+340,Maximiano Moll Blázquez,Neiva,13.67,1.88,Ibague,Ibague -> Neiva,211.0,1
+341,Teodosio Carreño Guzman,Cartagena,2.81,0.89,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+342,Soledad Casanova,Santa Marta,0.42,1.54,,NO EXISTE EN GRAFO,,0
+343,Maricruz Naranjo Vélez,Barranquilla,56.63,1.14,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+344,Clara Batalla Almagro,Armenia,52.99,1.02,Ibague,Ibague -> Armenia,5.4,1
+345,Nicodemo Arranz Capdevila,Cartagena,3.45,0.57,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+346,Virginia Sarmiento Menéndez,Cartagena,52.7,0.5,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+347,Edgardo Roldán Mur,Cartagena,48.36,0.03,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+348,José Antonio del Acuña,Pereira,22.06,0.15,Pereira,Pereira,0.0,0
+349,María Pilar Ramírez,Villavicencio,50.8,1.94,Bogota,Bogota -> Villavicencio,123.0,1
+350,Albino del Abella,Ibagué,16.12,2.13,,NO EXISTE EN GRAFO,,0
+351,Gertrudis de Torrent,Pasto,35.89,0.69,Bogota,Bogota -> Cali -> Pasto,844.0,2
+352,Maricela Cabanillas Saldaña,Pereira,33.84,2.8,Pereira,Pereira,0.0,0
+353,Melchor Báez-Bertrán,Armenia,58.52,2.64,Ibague,Ibague -> Armenia,5.4,1
+354,Sol Casanova,Cali,75.27,1.33,Bogota,Bogota -> Cali,458.0,1
+355,Marcial Bru Gordillo,Ibagué,63.37,0.75,,NO EXISTE EN GRAFO,,0
+356,Martina Contreras-Rivas,Cali,58.15,0.2,Bogota,Bogota -> Cali,458.0,1
+357,Miguela Zapata Rodrigo,Santa Marta,70.53,0.47,,NO EXISTE EN GRAFO,,0
+358,Guillermo Salamanca Torrents,Cartagena,11.83,0.36,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+359,Paula Eulalia Español Coll,Cartagena,24.07,2.09,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+360,Ruperto Sarmiento,Pasto,57.85,2.5,Bogota,Bogota -> Cali -> Pasto,844.0,2
+361,Matilde Alma Cid Sancho,Neiva,46.96,1.09,Ibague,Ibague -> Neiva,211.0,1
+362,Antonia Correa Bermudez,Villavicencio,54.32,2.07,Bogota,Bogota -> Villavicencio,123.0,1
+363,Nicolasa Barragán Asensio,Neiva,57.85,2.84,Ibague,Ibague -> Neiva,211.0,1
+364,Nydia Armengol,Cali,77.85,2.5,Bogota,Bogota -> Cali,458.0,1
+365,Zacarías Uría-Múgica,Bogotá,13.76,1.1,,NO EXISTE EN GRAFO,,0
+366,Jafet de Sales,Manizales,73.37,2.8,Ibague,Ibague -> Manizales,163.0,1
+367,Lupe Teruel,Ibagué,60.18,2.27,,NO EXISTE EN GRAFO,,0
+368,Mercedes Madrid Paredes,Pasto,66.42,1.47,Bogota,Bogota -> Cali -> Pasto,844.0,2
+369,Hector Jurado Bauzà,Villavicencio,11.46,2.31,Bogota,Bogota -> Villavicencio,123.0,1
+370,Pancho Lladó-Pavón,Pereira,10.01,0.08,Pereira,Pereira,0.0,0
+371,Tecla de Carbonell,Tunja,13.45,0.83,Bogota,Bogota -> Tunja,139.0,1
+372,Elena Bertrán Jordá,Cartagena,44.0,1.94,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+373,Pili Regina Cámara Uribe,Cartagena,72.49,0.44,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+374,Eligio del Rosell,Manizales,8.68,0.01,Ibague,Ibague -> Manizales,163.0,1
+375,Ruben Carpio Rodriguez,Pasto,30.38,2.09,Bogota,Bogota -> Cali -> Pasto,844.0,2
+376,Ignacio Zurita Barberá,Ibagué,59.39,0.61,,NO EXISTE EN GRAFO,,0
+377,Esperanza Campos Carmona,Bogotá,74.69,1.9,,NO EXISTE EN GRAFO,,0
+378,Hortensia de Barriga,Neiva,75.78,1.38,Ibague,Ibague -> Neiva,211.0,1
+379,Martín Dueñas Enríquez,Ibagué,59.98,0.23,,NO EXISTE EN GRAFO,,0
+380,Adalberto Virgilio Vega López,Medellín,70.22,1.31,,NO EXISTE EN GRAFO,,0
+381,Wilfredo Armas Bayo,Manizales,69.97,1.92,Ibague,Ibague -> Manizales,163.0,1
+382,Ámbar Arribas Casal,Santa Marta,20.74,0.98,,NO EXISTE EN GRAFO,,0
+383,Estela Torrens Higueras,Villavicencio,7.97,1.93,Bogota,Bogota -> Villavicencio,123.0,1
+384,Sancho Diaz-Bartolomé,Tunja,46.83,0.21,Bogota,Bogota -> Tunja,139.0,1
+385,Lorenza Giner Sandoval,Cartagena,64.68,0.57,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+386,Epifanio Rodriguez-Bertrán,Villavicencio,33.29,1.26,Bogota,Bogota -> Villavicencio,123.0,1
+387,Paulina Campos Flores,Bogotá,56.55,2.77,,NO EXISTE EN GRAFO,,0
+388,Teresita Izaguirre Céspedes,Bucaramanga,54.51,0.87,Bucaramanga,Bucaramanga,0.0,0
+389,Ruy Cal Bermúdez,Armenia,77.98,1.56,Ibague,Ibague -> Armenia,5.4,1
+390,Toni Perea Pedro,Neiva,24.38,1.02,Ibague,Ibague -> Neiva,211.0,1
+391,Ramiro Gallardo Guardiola,Santa Marta,67.06,0.24,,NO EXISTE EN GRAFO,,0
+392,Lucila Carrera Franch,Manizales,79.58,1.56,Ibague,Ibague -> Manizales,163.0,1
+393,Flavio Arnau Aznar,Ibagué,16.02,0.12,,NO EXISTE EN GRAFO,,0
+394,Valerio Blanco Sastre,Santa Marta,58.57,0.2,,NO EXISTE EN GRAFO,,0
+395,Aroa Alberto Redondo,Pasto,51.44,1.48,Bogota,Bogota -> Cali -> Pasto,844.0,2
+396,Sabas Peiró Medina,Pereira,48.8,1.32,Pereira,Pereira,0.0,0
+397,Anastasia Carlos Batlle,Bogotá,12.1,1.29,,NO EXISTE EN GRAFO,,0
+398,Jordán Vilaplana Coronado,Cali,46.86,0.71,Bogota,Bogota -> Cali,458.0,1
+399,Jesús Muro Peiró,Manizales,78.75,1.59,Ibague,Ibague -> Manizales,163.0,1
+400,María Mariño Santamaria,Medellín,53.33,2.47,,NO EXISTE EN GRAFO,,0
+401,Amancio Quirino Bas Díez,Pasto,43.71,2.25,Bogota,Bogota -> Cali -> Pasto,844.0,2
+402,Noa Montesinos Caballero,Bucaramanga,74.22,0.35,Bucaramanga,Bucaramanga,0.0,0
+403,Máximo del Pedro,Villavicencio,2.62,1.37,Bogota,Bogota -> Villavicencio,123.0,1
+404,Úrsula Maristela Salamanca Salvador,Tunja,4.95,0.49,Bogota,Bogota -> Tunja,139.0,1
+405,Ruperta del Font,Villavicencio,29.31,0.09,Bogota,Bogota -> Villavicencio,123.0,1
+406,Clara Nuñez Tirado,Barranquilla,27.94,0.43,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+407,Juan Pablo Giralt Parejo,Villavicencio,44.97,2.29,Bogota,Bogota -> Villavicencio,123.0,1
+408,Tito León Jordán,Bogotá,15.91,2.15,,NO EXISTE EN GRAFO,,0
+409,Corona Valero-Cuadrado,Bogotá,33.8,2.1,,NO EXISTE EN GRAFO,,0
+410,Angelino Benavides-Sierra,Armenia,5.22,0.14,Ibague,Ibague -> Armenia,5.4,1
+411,Carmela Barros Verdejo,Manizales,53.61,0.42,Ibague,Ibague -> Manizales,163.0,1
+412,Duilio Neira Córdoba,Armenia,36.96,2.94,Ibague,Ibague -> Armenia,5.4,1
+413,Loreto de Cobos,Pereira,0.39,2.58,Pereira,Pereira,0.0,0
+414,Febe Muñoz Cerdán,Pereira,37.43,0.52,Pereira,Pereira,0.0,0
+415,Teodosio Saturnino Doménech Salgado,Villavicencio,21.33,1.57,Bogota,Bogota -> Villavicencio,123.0,1
+416,Victoriano Mauricio Garcia Feliu,Pasto,15.04,0.12,Bogota,Bogota -> Cali -> Pasto,844.0,2
+417,Jenaro Piquer Escudero,Barranquilla,54.89,1.44,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+418,Verónica del Gallardo,Santa Marta,57.84,2.1,,NO EXISTE EN GRAFO,,0
+419,Amando Pablo Escudero,Santa Marta,32.63,1.92,,NO EXISTE EN GRAFO,,0
+420,Cándido Roman Bilbao,Cartagena,16.4,1.07,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+421,Agustín Anguita Malo,Bucaramanga,59.22,2.36,Bucaramanga,Bucaramanga,0.0,0
+422,Marcos Sanjuan Delgado,Tunja,49.67,0.56,Bogota,Bogota -> Tunja,139.0,1
+423,Regina Angulo Tapia,Santa Marta,7.47,2.19,,NO EXISTE EN GRAFO,,0
+424,Corona Carballo Quintana,Cali,14.9,1.64,Bogota,Bogota -> Cali,458.0,1
+425,Fito Busquets-Velázquez,Tunja,75.92,1.84,Bogota,Bogota -> Tunja,139.0,1
+426,Luisina Solera Aznar,Manizales,10.69,2.86,Ibague,Ibague -> Manizales,163.0,1
+427,Belen Rios-Company,Medellín,19.72,1.75,,NO EXISTE EN GRAFO,,0
+428,Carmelita Cerdán-Salamanca,Barranquilla,11.12,2.73,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+429,Isa Doménech Báez,Armenia,22.31,1.73,Ibague,Ibague -> Armenia,5.4,1
+430,Lisandro Requena Arias,Cartagena,5.68,0.36,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+431,Plinio Rubén Roman Guitart,Bogotá,60.91,1.72,,NO EXISTE EN GRAFO,,0
+432,Anabel Carlos Sedano,Cali,16.17,1.57,Bogota,Bogota -> Cali,458.0,1
+433,Brunilda Carreño Cañete,Manizales,79.05,0.98,Ibague,Ibague -> Manizales,163.0,1
+434,Pelayo Puga Reina,Neiva,32.96,1.13,Ibague,Ibague -> Neiva,211.0,1
+435,Manu Correa Bertrán,Bogotá,1.05,0.98,,NO EXISTE EN GRAFO,,0
+436,Lorenzo Segarra-Boada,Armenia,32.44,2.71,Ibague,Ibague -> Armenia,5.4,1
+437,Tamara Pont Alcolea,Bucaramanga,10.68,1.34,Bucaramanga,Bucaramanga,0.0,0
+438,Leire Velasco Herranz,Santa Marta,8.15,2.57,,NO EXISTE EN GRAFO,,0
+439,Marina de Pérez,Pasto,1.61,0.07,Bogota,Bogota -> Cali -> Pasto,844.0,2
+440,Isabela Rivas,Villavicencio,12.11,1.82,Bogota,Bogota -> Villavicencio,123.0,1
+441,Gastón España Pinto,Manizales,30.71,2.35,Ibague,Ibague -> Manizales,163.0,1
+442,Adelaida Rovira-Sabater,Tunja,67.43,0.57,Bogota,Bogota -> Tunja,139.0,1
+443,Porfirio de Castillo,Villavicencio,61.48,2.44,Bogota,Bogota -> Villavicencio,123.0,1
+444,Tecla de Lerma,Bucaramanga,42.25,2.12,Bucaramanga,Bucaramanga,0.0,0
+445,Gabriel Zapata Benito,Pasto,79.55,1.59,Bogota,Bogota -> Cali -> Pasto,844.0,2
+446,Jose Manuel Mas Company,Medellín,46.35,0.97,,NO EXISTE EN GRAFO,,0
+447,Ramiro Baena Colom,Santa Marta,74.34,0.56,,NO EXISTE EN GRAFO,,0
+448,Inés Vallejo Puga,Cali,59.97,0.95,Bogota,Bogota -> Cali,458.0,1
+449,Jose Antonio Solera Benavides,Pasto,54.71,2.76,Bogota,Bogota -> Cali -> Pasto,844.0,2
+450,Amaya Godoy Cardona,Neiva,43.92,0.89,Ibague,Ibague -> Neiva,211.0,1
+451,Joaquín Sandoval-Redondo,Pereira,26.88,1.45,Pereira,Pereira,0.0,0
+452,Emperatriz Izquierdo Herrera,Villavicencio,63.49,0.8,Bogota,Bogota -> Villavicencio,123.0,1
+453,Juanito Ricart Puga,Armenia,45.36,0.36,Ibague,Ibague -> Armenia,5.4,1
+454,Pascual de Lillo,Manizales,7.29,2.72,Ibague,Ibague -> Manizales,163.0,1
+455,Pascual Iborra Plana,Barranquilla,36.47,0.86,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+456,Obdulia Vera Maestre Ros,Bogotá,8.72,0.86,,NO EXISTE EN GRAFO,,0
+457,Aurelio Orozco Crespo,Medellín,79.81,3.0,,NO EXISTE EN GRAFO,,0
+458,Apolonia Pareja Miró,Pasto,43.67,1.27,Bogota,Bogota -> Cali -> Pasto,844.0,2
+459,Cristian Hernandez Torres,Barranquilla,63.16,0.46,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+460,Dimas Mario Giner Huguet,Pereira,55.48,2.67,Pereira,Pereira,0.0,0
+461,Florina Sanz,Bucaramanga,30.94,1.58,Bucaramanga,Bucaramanga,0.0,0
+462,Isa Tapia Morata,Manizales,32.71,2.22,Ibague,Ibague -> Manizales,163.0,1
+463,Isabela Vall,Neiva,72.13,0.76,Ibague,Ibague -> Neiva,211.0,1
+464,Luis Puerta Márquez,Armenia,63.45,1.24,Ibague,Ibague -> Armenia,5.4,1
+465,Celestino Moles Galiano,Bucaramanga,52.74,0.53,Bucaramanga,Bucaramanga,0.0,0
+466,Teobaldo Ledesma Morales,Tunja,79.43,2.63,Bogota,Bogota -> Tunja,139.0,1
+467,Carmela Abellán Gil,Bucaramanga,64.96,2.16,Bucaramanga,Bucaramanga,0.0,0
+468,Eugenia Garzón Jordán,Medellín,36.6,2.63,,NO EXISTE EN GRAFO,,0
+469,Gaspar Tejera Guijarro,Santa Marta,5.05,2.69,,NO EXISTE EN GRAFO,,0
+470,Coral Loreto Castelló Sandoval,Cartagena,12.49,0.03,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+471,Epifanio Rosselló Guzman,Bogotá,58.58,0.96,,NO EXISTE EN GRAFO,,0
+472,Andrés del Yáñez,Tunja,50.22,2.82,Bogota,Bogota -> Tunja,139.0,1
+473,Genoveva Jerez Aramburu,Cartagena,30.43,0.51,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+474,Lilia Reina,Villavicencio,36.29,1.49,Bogota,Bogota -> Villavicencio,123.0,1
+475,Vicente Exposito Gámez,Manizales,73.93,2.89,Ibague,Ibague -> Manizales,163.0,1
+476,Griselda Bello Acedo,Villavicencio,64.94,2.98,Bogota,Bogota -> Villavicencio,123.0,1
+477,Ildefonso Yuste Ramirez,Armenia,11.24,1.68,Ibague,Ibague -> Armenia,5.4,1
+478,Lucía Alfaro Sabater,Ibagué,77.48,0.46,,NO EXISTE EN GRAFO,,0
+479,Cándido Salas Calleja,Cali,0.39,1.07,Bogota,Bogota -> Cali,458.0,1
+480,Joan Correa Guillen,Ibagué,58.63,0.98,,NO EXISTE EN GRAFO,,0
+481,Aura Perez-Alfaro,Bucaramanga,47.36,2.38,Bucaramanga,Bucaramanga,0.0,0
+482,Claudia del Tovar,Manizales,61.01,1.61,Ibague,Ibague -> Manizales,163.0,1
+483,Viviana del Ibañez,Pereira,60.31,0.62,Pereira,Pereira,0.0,0
+484,Adalberto Enrique Milla Vaquero,Armenia,39.26,2.51,Ibague,Ibague -> Armenia,5.4,1
+485,Nacho Campillo,Bucaramanga,5.62,2.17,Bucaramanga,Bucaramanga,0.0,0
+486,Josefina Madrigal Cabezas,Tunja,76.04,1.15,Bogota,Bogota -> Tunja,139.0,1
+487,Lupita Infante Cueto,Cartagena,26.3,1.78,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+488,Vito Salamanca,Pereira,6.6,1.82,Pereira,Pereira,0.0,0
+489,Adela Gutierrez Vilalta,Cali,7.08,1.84,Bogota,Bogota -> Cali,458.0,1
+490,René Ribera Morante,Bogotá,68.97,1.23,,NO EXISTE EN GRAFO,,0
+491,Asdrubal de Alba,Bucaramanga,29.24,0.44,Bucaramanga,Bucaramanga,0.0,0
+492,Moisés Camacho Carrión,Barranquilla,41.77,0.94,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+493,Natalia Ponce-Lloret,Armenia,64.47,2.56,Ibague,Ibague -> Armenia,5.4,1
+494,Nydia Murcia Carranza,Pereira,72.57,2.04,Pereira,Pereira,0.0,0
+495,Aurora de Peláez,Armenia,59.65,0.54,Ibague,Ibague -> Armenia,5.4,1
+496,Leandro Zapata Cifuentes,Pereira,25.65,1.92,Pereira,Pereira,0.0,0
+497,Mireia Gomila Clavero,Bogotá,26.35,0.09,,NO EXISTE EN GRAFO,,0
+498,Amador del Cordero,Neiva,59.41,2.56,Ibague,Ibague -> Neiva,211.0,1
+499,Rafa Cortes-Garcés,Manizales,60.96,0.62,Ibague,Ibague -> Manizales,163.0,1
+500,América Anguita-Villalba,Ibagué,56.03,1.72,,NO EXISTE EN GRAFO,,0
+501,Félix Hidalgo Giner,Barranquilla,67.63,2.25,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+502,Prudencio Martorell,Cali,5.17,2.94,Bogota,Bogota -> Cali,458.0,1
+503,Gonzalo Castells Nevado,Neiva,68.55,0.4,Ibague,Ibague -> Neiva,211.0,1
+504,Adoración Rosado Mur,Santa Marta,46.7,0.68,,NO EXISTE EN GRAFO,,0
+505,Sara de Ripoll,Cartagena,37.94,1.03,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+506,Arcelia Moll Pons,Santa Marta,5.18,2.33,,NO EXISTE EN GRAFO,,0
+507,Nayara Cabanillas Segovia,Ibagué,8.44,2.77,,NO EXISTE EN GRAFO,,0
+508,Humberto Serna Pozuelo,Barranquilla,22.62,0.73,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+509,Valentina Llamas Catalán,Ibagué,59.72,1.19,,NO EXISTE EN GRAFO,,0
+510,Florina Anselma Menéndez Santana,Cartagena,24.97,2.46,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+511,Águeda Neira Torrijos,Medellín,47.92,1.32,,NO EXISTE EN GRAFO,,0
+512,Andrés Felipe Marqués Barceló,Armenia,23.47,1.7,Ibague,Ibague -> Armenia,5.4,1
+513,Eusebia Calleja Pozo,Pereira,63.61,2.13,Pereira,Pereira,0.0,0
+514,Luís Menéndez-Egea,Barranquilla,67.41,0.21,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+515,Florinda Bru Morata,Pasto,36.1,1.92,Bogota,Bogota -> Cali -> Pasto,844.0,2
+516,Cándido de Malo,Cartagena,69.2,2.22,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+517,José Antonio Martin,Pereira,8.98,0.37,Pereira,Pereira,0.0,0
+518,Susanita Tejada-Prada,Barranquilla,52.09,1.37,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+519,Pío Juan Pablo Peral Manjón,Santa Marta,37.49,0.31,,NO EXISTE EN GRAFO,,0
+520,Eligio Marín Bárcena,Bucaramanga,28.36,1.0,Bucaramanga,Bucaramanga,0.0,0
+521,Eladio Solano Hervia,Armenia,17.85,0.76,Ibague,Ibague -> Armenia,5.4,1
+522,Alfredo Mulet Alba,Pereira,20.15,1.28,Pereira,Pereira,0.0,0
+523,Susana Mendizábal Tolosa,Bogotá,57.51,2.93,,NO EXISTE EN GRAFO,,0
+524,Juanito Aarón Blázquez Roldán,Cali,74.31,2.12,Bogota,Bogota -> Cali,458.0,1
+525,Ale Gaya Gimeno,Armenia,49.14,1.36,Ibague,Ibague -> Armenia,5.4,1
+526,Isidro Aguilera Alba,Neiva,68.73,2.43,Ibague,Ibague -> Neiva,211.0,1
+527,Carlito Araujo,Tunja,56.1,0.12,Bogota,Bogota -> Tunja,139.0,1
+528,Yéssica Cabrero Piña,Bucaramanga,43.64,0.46,Bucaramanga,Bucaramanga,0.0,0
+529,Benigno Aurelio Chamorro Luna,Tunja,28.74,1.01,Bogota,Bogota -> Tunja,139.0,1
+530,Encarnación Iglesias,Pasto,14.09,2.33,Bogota,Bogota -> Cali -> Pasto,844.0,2
+531,Ambrosio Macario Camps Márquez,Ibagué,69.5,1.47,,NO EXISTE EN GRAFO,,0
+532,María Ángeles Navarro Rosales,Bucaramanga,33.05,0.5,Bucaramanga,Bucaramanga,0.0,0
+533,Benigna Coloma,Barranquilla,15.88,0.5,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+534,Ana Belén del Céspedes,Cali,52.7,1.83,Bogota,Bogota -> Cali,458.0,1
+535,Ovidio Iñiguez Hervás,Bucaramanga,14.07,2.21,Bucaramanga,Bucaramanga,0.0,0
+536,Ruperto Nicolás,Cartagena,22.88,2.26,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+537,Ricarda Aparicio Gallego,Neiva,30.28,1.12,Ibague,Ibague -> Neiva,211.0,1
+538,Marisol Berenguer Boada,Cartagena,37.39,0.92,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+539,Néstor Salas Ballesteros,Cali,3.11,2.06,Bogota,Bogota -> Cali,458.0,1
+540,Lucas Sanabria Vergara,Medellín,53.43,0.66,,NO EXISTE EN GRAFO,,0
+541,Manu Tamarit-Becerra,Cartagena,23.28,2.01,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+542,Clotilde Amalia García Ayllón,Medellín,24.19,2.7,,NO EXISTE EN GRAFO,,0
+543,Evaristo Ballesteros-Vall,Barranquilla,65.86,1.9,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+544,Cipriano Barón Agustín,Pereira,28.82,2.04,Pereira,Pereira,0.0,0
+545,Marcial Prats Heredia,Bogotá,33.27,1.85,,NO EXISTE EN GRAFO,,0
+546,Amado Agustí Campos,Barranquilla,19.54,0.21,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+547,Rodrigo Perales Sastre,Cartagena,30.79,0.95,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+548,Vito Ángel Pozo Lago,Cali,69.97,0.46,Bogota,Bogota -> Cali,458.0,1
+549,Amando del Llamas,Pereira,30.44,2.87,Pereira,Pereira,0.0,0
+550,Ramiro Llamas Becerra,Cartagena,54.55,2.1,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+551,Simón Soriano Sotelo,Neiva,36.83,2.82,Ibague,Ibague -> Neiva,211.0,1
+552,Narcisa Valcárcel Tomás,Armenia,27.82,1.55,Ibague,Ibague -> Armenia,5.4,1
+553,Carolina Nélida Colom Galán,Villavicencio,22.11,0.55,Bogota,Bogota -> Villavicencio,123.0,1
+554,Alejandra Fiol Salom,Manizales,54.43,2.37,Ibague,Ibague -> Manizales,163.0,1
+555,Natividad Vendrell,Ibagué,38.37,1.88,,NO EXISTE EN GRAFO,,0
+556,Angelino Nuñez,Ibagué,1.6,2.17,,NO EXISTE EN GRAFO,,0
+557,Hector Goñi Bayo,Armenia,66.47,1.57,Ibague,Ibague -> Armenia,5.4,1
+558,Pía Román Navas,Cartagena,69.79,2.67,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+559,Sabina Posada Iglesias,Cartagena,27.64,0.38,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+560,Marcos Díaz Acero,Pereira,36.06,2.54,Pereira,Pereira,0.0,0
+561,Isabel Fabra Cisneros,Bucaramanga,19.8,2.01,Bucaramanga,Bucaramanga,0.0,0
+562,Nazario Esteve,Cali,18.34,0.09,Bogota,Bogota -> Cali,458.0,1
+563,Salvador Garcés Taboada,Bogotá,60.1,0.17,,NO EXISTE EN GRAFO,,0
+564,Haroldo Galan Zamora,Pasto,59.65,1.65,Bogota,Bogota -> Cali -> Pasto,844.0,2
+565,Celia Velasco Nicolau,Manizales,11.47,0.13,Ibague,Ibague -> Manizales,163.0,1
+566,Ana Belén Cortina,Barranquilla,46.9,2.83,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+567,Adrián Gallego-Busquets,Neiva,17.27,1.01,Ibague,Ibague -> Neiva,211.0,1
+568,Marcelo Armengol Doménech,Bogotá,38.86,0.45,,NO EXISTE EN GRAFO,,0
+569,Vanesa Vara Lago,Armenia,11.98,2.04,Ibague,Ibague -> Armenia,5.4,1
+570,Marco Giner Delgado,Tunja,31.72,0.83,Bogota,Bogota -> Tunja,139.0,1
+571,Jovita Armida Amaya Paredes,Pereira,77.49,0.86,Pereira,Pereira,0.0,0
+572,Melchor Araujo-Chaparro,Neiva,39.6,1.62,Ibague,Ibague -> Neiva,211.0,1
+573,Baudelio del Egea,Medellín,21.9,1.79,,NO EXISTE EN GRAFO,,0
+574,Isa Ibarra Bermúdez,Ibagué,35.88,1.54,,NO EXISTE EN GRAFO,,0
+575,Susana Olmedo Moreno,Neiva,14.22,1.93,Ibague,Ibague -> Neiva,211.0,1
+576,Leticia Rosalía Escobar Zaragoza,Tunja,43.73,1.85,Bogota,Bogota -> Tunja,139.0,1
+577,Juana Morata Orozco,Pereira,12.48,2.7,Pereira,Pereira,0.0,0
+578,Nerea Amor Pou,Pasto,8.9,1.25,Bogota,Bogota -> Cali -> Pasto,844.0,2
+579,Esperanza Galván Chacón,Barranquilla,58.72,1.99,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+580,Chus Vicente-Coello,Armenia,51.31,2.45,Ibague,Ibague -> Armenia,5.4,1
+581,María Del Carmen Vallés Pons,Tunja,49.44,1.95,Bogota,Bogota -> Tunja,139.0,1
+582,Melchor Crespo Rivera,Barranquilla,31.85,1.13,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+583,Gustavo Ismael Español Soria,Neiva,50.51,2.07,Ibague,Ibague -> Neiva,211.0,1
+584,Paloma Peiró Daza,Cartagena,23.96,0.23,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+585,Hipólito Jeremías Andrés Torrent,Cali,9.63,0.81,Bogota,Bogota -> Cali,458.0,1
+586,Chucho Vergara Coll,Barranquilla,68.82,1.33,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+587,Teo de Manzanares,Tunja,5.24,1.66,Bogota,Bogota -> Tunja,139.0,1
+588,Modesto Cornelio Lledó Quirós,Manizales,56.97,1.19,Ibague,Ibague -> Manizales,163.0,1
+589,Andrés Felipe Roig,Ibagué,2.1,1.84,,NO EXISTE EN GRAFO,,0
+590,Florentino Carpio Zamorano,Bogotá,28.63,0.63,,NO EXISTE EN GRAFO,,0
+591,Marco Zabaleta Cortés,Cali,28.92,1.06,Bogota,Bogota -> Cali,458.0,1
+592,Rosario Cerdán Manrique,Manizales,76.16,2.49,Ibague,Ibague -> Manizales,163.0,1
+593,Armando Palacio Torrens,Tunja,60.83,0.8,Bogota,Bogota -> Tunja,139.0,1
+594,Aarón Gastón Feijoo Iborra,Cali,37.96,0.62,Bogota,Bogota -> Cali,458.0,1
+595,Salomón Vazquez Bayona,Neiva,26.92,1.38,Ibague,Ibague -> Neiva,211.0,1
+596,Trini Figuerola Prada,Manizales,58.7,0.3,Ibague,Ibague -> Manizales,163.0,1
+597,Natividad Carbonell,Neiva,67.74,2.76,Ibague,Ibague -> Neiva,211.0,1
+598,Encarnita Vaquero Sandoval,Pasto,52.0,2.97,Bogota,Bogota -> Cali -> Pasto,844.0,2
+599,Iris de Ramis,Armenia,45.7,1.07,Ibague,Ibague -> Armenia,5.4,1
+600,Jafet Pedrero,Medellín,22.11,1.85,,NO EXISTE EN GRAFO,,0
+601,Juan Antonio Castellanos Arias,Villavicencio,31.91,0.24,Bogota,Bogota -> Villavicencio,123.0,1
+602,Demetrio Salom Herrero,Pereira,45.78,1.4,Pereira,Pereira,0.0,0
+603,Félix Ocaña,Cartagena,72.02,1.36,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+604,Luz Suarez Ballesteros,Barranquilla,46.82,2.06,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+605,Eulalia Diaz,Pereira,46.3,0.55,Pereira,Pereira,0.0,0
+606,Gerardo del Blanca,Villavicencio,14.96,2.48,Bogota,Bogota -> Villavicencio,123.0,1
+607,Manu Borja Luján,Pasto,2.26,2.0,Bogota,Bogota -> Cali -> Pasto,844.0,2
+608,Paz Herranz Roura,Barranquilla,59.28,0.33,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+609,Ramona Tirado Costa,Neiva,13.47,2.34,Ibague,Ibague -> Neiva,211.0,1
+610,Yago Daza-Rozas,Pasto,42.57,1.58,Bogota,Bogota -> Cali -> Pasto,844.0,2
+611,Amarilis Nogueira Agullo,Ibagué,13.31,2.46,,NO EXISTE EN GRAFO,,0
+612,Hernando Rivero Molina,Cartagena,69.31,0.07,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+613,Primitivo Piña Gordillo,Neiva,33.85,0.03,Ibague,Ibague -> Neiva,211.0,1
+614,Florina Nadal,Villavicencio,31.88,0.67,Bogota,Bogota -> Villavicencio,123.0,1
+615,Flavia Naranjo Bolaños,Barranquilla,3.46,0.3,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+616,Antonia Portero Abascal,Bucaramanga,3.57,0.98,Bucaramanga,Bucaramanga,0.0,0
+617,Benjamín Prat-Pujadas,Cartagena,75.6,0.43,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+618,Febe del Castelló,Medellín,27.84,2.75,,NO EXISTE EN GRAFO,,0
+619,Maximiliano Varela Rivas,Cali,33.76,2.48,Bogota,Bogota -> Cali,458.0,1
+620,Bartolomé Berenguer-Salmerón,Cali,26.35,2.89,Bogota,Bogota -> Cali,458.0,1
+621,Luisina Olmo Carlos,Bogotá,3.1,1.87,,NO EXISTE EN GRAFO,,0
+622,José Antonio Cases Céspedes,Villavicencio,65.29,0.02,Bogota,Bogota -> Villavicencio,123.0,1
+623,Primitiva del Reig,Pasto,59.68,0.01,Bogota,Bogota -> Cali -> Pasto,844.0,2
+624,Leandra Trillo Caballero,Armenia,67.29,1.2,Ibague,Ibague -> Armenia,5.4,1
+625,Aurora Calderon,Medellín,3.94,2.87,,NO EXISTE EN GRAFO,,0
+626,Rita Madrid Prats,Santa Marta,24.08,1.13,,NO EXISTE EN GRAFO,,0
+627,Julián Núñez Zabaleta,Tunja,47.8,2.78,Bogota,Bogota -> Tunja,139.0,1
+628,Renata Cobo Ripoll,Armenia,11.15,2.69,Ibague,Ibague -> Armenia,5.4,1
+629,Bonifacio Núñez Antúnez,Cartagena,22.41,0.22,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+630,Juliana Lucas,Bucaramanga,5.13,0.88,Bucaramanga,Bucaramanga,0.0,0
+631,África Camps Yuste,Tunja,27.22,2.11,Bogota,Bogota -> Tunja,139.0,1
+632,Soledad Ledesma Tomás,Santa Marta,5.19,1.34,,NO EXISTE EN GRAFO,,0
+633,Marcela Real Sabater,Armenia,60.61,2.48,Ibague,Ibague -> Armenia,5.4,1
+634,Claudia del Abascal,Medellín,18.66,2.87,,NO EXISTE EN GRAFO,,0
+635,Marco Goñi Girón,Pasto,17.7,1.19,Bogota,Bogota -> Cali -> Pasto,844.0,2
+636,Paulina Dávila Torres,Ibagué,26.71,0.6,,NO EXISTE EN GRAFO,,0
+637,Alex Jesús Arnau Roman,Bogotá,17.01,2.55,,NO EXISTE EN GRAFO,,0
+638,Marino del Pardo,Ibagué,48.08,1.69,,NO EXISTE EN GRAFO,,0
+639,Carmela Coloma Palacio,Santa Marta,36.0,3.0,,NO EXISTE EN GRAFO,,0
+640,Diana del Bermejo,Santa Marta,26.37,0.42,,NO EXISTE EN GRAFO,,0
+641,Nazaret Morante-Bermúdez,Bucaramanga,42.33,2.16,Bucaramanga,Bucaramanga,0.0,0
+642,Ainoa Valcárcel Ruiz,Villavicencio,36.63,2.58,Bogota,Bogota -> Villavicencio,123.0,1
+643,Josefina Alvarado,Cartagena,45.13,1.09,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+644,Macario Yuste Cantero,Armenia,58.1,2.9,Ibague,Ibague -> Armenia,5.4,1
+645,Jennifer Gómez Álvarez,Ibagué,5.75,1.51,,NO EXISTE EN GRAFO,,0
+646,Alexandra Torralba Lledó,Villavicencio,31.01,0.33,Bogota,Bogota -> Villavicencio,123.0,1
+647,Eva Pont-Mariño,Armenia,58.93,1.63,Ibague,Ibague -> Armenia,5.4,1
+648,Alberto García Agustín,Santa Marta,50.76,0.67,,NO EXISTE EN GRAFO,,0
+649,Melisa Borrás Suárez,Armenia,37.92,0.82,Ibague,Ibague -> Armenia,5.4,1
+650,Antonia Asenjo Ojeda,Cali,43.55,0.61,Bogota,Bogota -> Cali,458.0,1
+651,Quirino Téllez-Rosell,Medellín,69.48,0.7,,NO EXISTE EN GRAFO,,0
+652,Lázaro Acuña Carpio,Cartagena,44.92,1.56,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+653,Melisa Alexandra Salcedo Alberola,Cali,30.98,2.26,Bogota,Bogota -> Cali,458.0,1
+654,Eli Gutiérrez Caro,Pereira,78.98,1.11,Pereira,Pereira,0.0,0
+655,Nazaret Rodríguez Ribera,Bogotá,73.12,1.19,,NO EXISTE EN GRAFO,,0
+656,Marcela Palomares Ferrán,Pereira,60.54,0.71,Pereira,Pereira,0.0,0
+657,Lisandro Solís,Cartagena,71.4,2.79,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+658,Úrsula Bonet Mínguez,Armenia,10.17,0.84,Ibague,Ibague -> Armenia,5.4,1
+659,Alejandro Angelino Miralles Carrión,Bucaramanga,58.0,2.0,Bucaramanga,Bucaramanga,0.0,0
+660,Esther del Velázquez,Medellín,54.07,1.73,,NO EXISTE EN GRAFO,,0
+661,Esmeralda Baquero Lucas,Neiva,22.94,1.29,Ibague,Ibague -> Neiva,211.0,1
+662,Danilo Ribera Andrade,Bucaramanga,71.52,2.36,Bucaramanga,Bucaramanga,0.0,0
+663,Odalys de Azorin,Tunja,19.48,1.81,Bogota,Bogota -> Tunja,139.0,1
+664,Baltasar Romero Martin,Pasto,8.39,0.25,Bogota,Bogota -> Cali -> Pasto,844.0,2
+665,Rosario Sanabria Coronado,Villavicencio,31.91,0.35,Bogota,Bogota -> Villavicencio,123.0,1
+666,Berta Valenzuela Aragón,Armenia,17.16,0.89,Ibague,Ibague -> Armenia,5.4,1
+667,Reyes Hernández Robles,Neiva,72.38,0.49,Ibague,Ibague -> Neiva,211.0,1
+668,Jose Ramón de Jiménez,Cartagena,14.67,0.59,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+669,Catalina Salvà Infante,Bucaramanga,1.15,2.47,Bucaramanga,Bucaramanga,0.0,0
+670,Ariel Sans,Santa Marta,46.06,0.53,,NO EXISTE EN GRAFO,,0
+671,Epifanio Pizarro Vega,Bogotá,24.2,1.61,,NO EXISTE EN GRAFO,,0
+672,José María Tormo Baena,Bogotá,47.48,2.39,,NO EXISTE EN GRAFO,,0
+673,Segismundo Alvarez Santamaría,Barranquilla,56.88,0.18,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+674,Emilia Jara Llorens,Cartagena,15.12,2.74,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+675,Rolando Escrivá Mora,Cali,68.32,1.36,Bogota,Bogota -> Cali,458.0,1
+676,Nereida de Salvà,Villavicencio,76.55,1.8,Bogota,Bogota -> Villavicencio,123.0,1
+677,Marisela María Jesús Guerrero Ibarra,Medellín,15.62,1.61,,NO EXISTE EN GRAFO,,0
+678,Cleto Correa,Villavicencio,31.75,0.56,Bogota,Bogota -> Villavicencio,123.0,1
+679,Edmundo Salazar Barranco,Barranquilla,69.19,1.39,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+680,Adriana Aguirre Portillo,Neiva,38.91,0.85,Ibague,Ibague -> Neiva,211.0,1
+681,Marcia del Bermúdez,Manizales,21.92,0.88,Ibague,Ibague -> Manizales,163.0,1
+682,Manuel Moll-Pina,Bucaramanga,75.6,0.08,Bucaramanga,Bucaramanga,0.0,0
+683,Vicenta Coello Bermudez,Bucaramanga,74.99,0.33,Bucaramanga,Bucaramanga,0.0,0
+684,Vanesa Pallarès Polo,Villavicencio,62.91,1.29,Bogota,Bogota -> Villavicencio,123.0,1
+685,Fabián Rosa,Tunja,39.18,0.75,Bogota,Bogota -> Tunja,139.0,1
+686,Teresita Durán Cortes,Manizales,1.39,1.78,Ibague,Ibague -> Manizales,163.0,1
+687,Pía Carrillo Bernad,Pereira,2.92,0.12,Pereira,Pereira,0.0,0
+688,Sara Donaire Peralta,Bucaramanga,11.63,0.17,Bucaramanga,Bucaramanga,0.0,0
+689,Sofía Clavero Pellicer,Villavicencio,38.04,1.79,Bogota,Bogota -> Villavicencio,123.0,1
+690,Aránzazu Marco-Peláez,Neiva,44.23,0.36,Ibague,Ibague -> Neiva,211.0,1
+691,Juan Osuna Vazquez,Cali,37.71,1.12,Bogota,Bogota -> Cali,458.0,1
+692,Flavia Abella,Tunja,41.32,2.21,Bogota,Bogota -> Tunja,139.0,1
+693,Berto Busquets Salom,Pasto,17.76,1.96,Bogota,Bogota -> Cali -> Pasto,844.0,2
+694,Juan Francisco Landa Tamarit,Villavicencio,7.02,2.77,Bogota,Bogota -> Villavicencio,123.0,1
+695,Isaura Macías Cañete,Bogotá,6.66,1.77,,NO EXISTE EN GRAFO,,0
+696,José Ángel Juan Luis Domínguez Checa,Medellín,13.68,2.58,,NO EXISTE EN GRAFO,,0
+697,Ainoa Castelló Rivera,Villavicencio,64.58,2.74,Bogota,Bogota -> Villavicencio,123.0,1
+698,Ignacia Sobrino Larrañaga,Bogotá,27.45,0.75,,NO EXISTE EN GRAFO,,0
+699,Vito Poza Rodríguez,Pereira,34.98,0.12,Pereira,Pereira,0.0,0
+700,Dafne Carlos Olivares,Cartagena,2.97,0.17,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+701,Aristides de Samper,Cali,43.4,1.28,Bogota,Bogota -> Cali,458.0,1
+702,Édgar Fabio Téllez Barrena,Neiva,21.83,0.53,Ibague,Ibague -> Neiva,211.0,1
+703,Julio César Hervia-Gutierrez,Santa Marta,31.37,0.47,,NO EXISTE EN GRAFO,,0
+704,Jacinta de Noriega,Neiva,58.57,2.89,Ibague,Ibague -> Neiva,211.0,1
+705,Basilio Sandoval Larrañaga,Armenia,4.99,2.85,Ibague,Ibague -> Armenia,5.4,1
+706,Flor Llorens Ayuso,Armenia,51.64,0.51,Ibague,Ibague -> Armenia,5.4,1
+707,Encarnita Frías Lluch,Barranquilla,78.99,2.74,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+708,Anacleto Teobaldo Nicolau Cervantes,Tunja,68.56,2.43,Bogota,Bogota -> Tunja,139.0,1
+709,Marianela Lobo Roselló,Ibagué,78.77,0.8,,NO EXISTE EN GRAFO,,0
+710,Luisa Marisela Abascal Castellanos,Ibagué,71.93,1.0,,NO EXISTE EN GRAFO,,0
+711,Desiderio Bautista Figuerola,Neiva,74.01,0.58,Ibague,Ibague -> Neiva,211.0,1
+712,Albano Nebot Ferrer,Pereira,71.79,1.58,Pereira,Pereira,0.0,0
+713,Horacio del Crespo,Cali,77.27,2.34,Bogota,Bogota -> Cali,458.0,1
+714,Gerardo Paulino Acero Mármol,Bogotá,20.93,2.66,,NO EXISTE EN GRAFO,,0
+715,Petrona Oriana Agustín Llamas,Bucaramanga,26.14,2.46,Bucaramanga,Bucaramanga,0.0,0
+716,Cosme Lluch Trillo,Pereira,66.13,0.56,Pereira,Pereira,0.0,0
+717,Marcelo Trillo Benavides,Pereira,39.78,2.14,Pereira,Pereira,0.0,0
+718,Oriana Eli Amador Castell,Pasto,31.47,2.24,Bogota,Bogota -> Cali -> Pasto,844.0,2
+719,Adoración Olimpia Agustín Dominguez,Cali,20.24,2.81,Bogota,Bogota -> Cali,458.0,1
+720,Narcisa de Sala,Cali,38.77,1.95,Bogota,Bogota -> Cali,458.0,1
+721,Gerardo Lamas,Bucaramanga,37.97,2.4,Bucaramanga,Bucaramanga,0.0,0
+722,Hermenegildo Coello Alcázar,Santa Marta,21.92,0.03,,NO EXISTE EN GRAFO,,0
+723,Ileana Martin Corral,Manizales,0.84,2.21,Ibague,Ibague -> Manizales,163.0,1
+724,Dora Daza Jódar,Santa Marta,6.46,0.53,,NO EXISTE EN GRAFO,,0
+725,Mayte Charo Rodríguez Burgos,Neiva,69.3,2.06,Ibague,Ibague -> Neiva,211.0,1
+726,Sancho Barrios Ayllón,Neiva,77.83,2.86,Ibague,Ibague -> Neiva,211.0,1
+727,Íñigo Quintero Cardona,Pasto,57.61,0.85,Bogota,Bogota -> Cali -> Pasto,844.0,2
+728,Simón Farré-Gual,Barranquilla,57.88,0.72,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+729,Hugo Vélez,Manizales,50.23,0.05,Ibague,Ibague -> Manizales,163.0,1
+730,Purificación Cámara Suárez,Bogotá,19.76,1.45,,NO EXISTE EN GRAFO,,0
+731,Leandra Barceló,Pereira,23.93,1.57,Pereira,Pereira,0.0,0
+732,Abilio Lorenzo Ferrández,Neiva,40.11,2.52,Ibague,Ibague -> Neiva,211.0,1
+733,Vito Bru Lozano,Bogotá,48.6,2.57,,NO EXISTE EN GRAFO,,0
+734,Berto Bautista-Marcos,Manizales,27.24,1.77,Ibague,Ibague -> Manizales,163.0,1
+735,Felisa Valls Naranjo,Pereira,54.8,1.4,Pereira,Pereira,0.0,0
+736,Ágata Tejedor Arcos,Barranquilla,45.65,1.31,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+737,Cosme Vallés Suarez,Santa Marta,68.73,0.81,,NO EXISTE EN GRAFO,,0
+738,Venceslás Coronado Alberdi,Manizales,11.84,0.7,Ibague,Ibague -> Manizales,163.0,1
+739,Natalio Amaya Pont,Manizales,58.39,1.73,Ibague,Ibague -> Manizales,163.0,1
+740,Iris Vargas Pi,Tunja,79.92,0.9,Bogota,Bogota -> Tunja,139.0,1
+741,Casemiro Gabaldón Barón,Santa Marta,4.9,2.51,,NO EXISTE EN GRAFO,,0
+742,Julio Murcia Bejarano,Cali,47.65,1.84,Bogota,Bogota -> Cali,458.0,1
+743,Berto Natanael Alsina Cáceres,Santa Marta,48.97,1.46,,NO EXISTE EN GRAFO,,0
+744,Georgina Rosselló Revilla,Medellín,31.21,0.7,,NO EXISTE EN GRAFO,,0
+745,Patricio Cerdán Oliver,Cartagena,35.66,1.61,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+746,Humberto Crespi Sarmiento,Cali,37.4,1.58,Bogota,Bogota -> Cali,458.0,1
+747,Yésica Amo Egea,Tunja,21.09,1.2,Bogota,Bogota -> Tunja,139.0,1
+748,Sarita Miró,Pasto,27.3,1.28,Bogota,Bogota -> Cali -> Pasto,844.0,2
+749,Milagros Valverde Adadia,Armenia,20.66,0.26,Ibague,Ibague -> Armenia,5.4,1
+750,Marta Ledesma Saura,Ibagué,46.97,2.7,,NO EXISTE EN GRAFO,,0
+751,Eduardo Roda Mascaró,Ibagué,67.96,2.25,,NO EXISTE EN GRAFO,,0
+752,Felipa Castejón Teruel,Pereira,39.13,1.86,Pereira,Pereira,0.0,0
+753,Eugenia Rosales Morales,Cali,11.55,1.07,Bogota,Bogota -> Cali,458.0,1
+754,Carlito Leal Mariscal,Santa Marta,66.75,2.43,,NO EXISTE EN GRAFO,,0
+755,Bonifacio Coronado Roma,Manizales,14.22,0.04,Ibague,Ibague -> Manizales,163.0,1
+756,Jordán Bravo,Medellín,77.64,0.59,,NO EXISTE EN GRAFO,,0
+757,Herminia Olivera Batalla,Neiva,78.31,1.49,Ibague,Ibague -> Neiva,211.0,1
+758,Benjamín Javier Diéguez Llorente,Pasto,32.84,0.24,Bogota,Bogota -> Cali -> Pasto,844.0,2
+759,Dan Arnau Pou,Bucaramanga,47.71,0.17,Bucaramanga,Bucaramanga,0.0,0
+760,Beatriz Eligia Fajardo Prieto,Pasto,15.99,1.24,Bogota,Bogota -> Cali -> Pasto,844.0,2
+761,Curro Mas Tejedor,Cali,40.77,2.49,Bogota,Bogota -> Cali,458.0,1
+762,Anastasia Soto Salazar,Manizales,33.57,0.61,Ibague,Ibague -> Manizales,163.0,1
+763,Carmina del Salamanca,Santa Marta,56.77,1.2,,NO EXISTE EN GRAFO,,0
+764,Bernardita Villa-Sanmartín,Ibagué,57.19,1.18,,NO EXISTE EN GRAFO,,0
+765,Pascual Nadal Amador,Neiva,18.84,0.92,Ibague,Ibague -> Neiva,211.0,1
+766,Plinio Casal Fernandez,Bucaramanga,66.63,2.71,Bucaramanga,Bucaramanga,0.0,0
+767,Genoveva Conesa,Armenia,77.55,1.67,Ibague,Ibague -> Armenia,5.4,1
+768,Hipólito de Belda,Bucaramanga,21.33,1.74,Bucaramanga,Bucaramanga,0.0,0
+769,Francisco Torrens-Estévez,Medellín,9.67,1.36,,NO EXISTE EN GRAFO,,0
+770,Gil Paniagua Zamorano,Armenia,30.77,2.96,Ibague,Ibague -> Armenia,5.4,1
+771,Celestino Cortina Jurado,Manizales,55.26,1.49,Ibague,Ibague -> Manizales,163.0,1
+772,Chema del Serrano,Cali,37.6,1.09,Bogota,Bogota -> Cali,458.0,1
+773,Cipriano Dueñas Codina,Pereira,77.45,2.69,Pereira,Pereira,0.0,0
+774,Epifanio Plana Cantón,Pereira,47.33,0.85,Pereira,Pereira,0.0,0
+775,Espiridión Giralt Trujillo,Manizales,4.9,2.57,Ibague,Ibague -> Manizales,163.0,1
+776,Brunilda Rosenda Arellano Diego,Pereira,35.84,2.09,Pereira,Pereira,0.0,0
+777,María Ángeles Morales Bertrán,Tunja,28.0,0.93,Bogota,Bogota -> Tunja,139.0,1
+778,Antonio Martinez Lobo,Pereira,31.13,2.75,Pereira,Pereira,0.0,0
+779,Wilfredo del Rodríguez,Medellín,4.71,2.7,,NO EXISTE EN GRAFO,,0
+780,Delia Aliaga Sanchez,Tunja,21.48,1.7,Bogota,Bogota -> Tunja,139.0,1
+781,Leire del Romero,Santa Marta,12.88,0.99,,NO EXISTE EN GRAFO,,0
+782,Florencia Ballester Marin,Medellín,15.18,2.09,,NO EXISTE EN GRAFO,,0
+783,Julieta Dueñas-Estevez,Manizales,73.93,2.9,Ibague,Ibague -> Manizales,163.0,1
+784,Rosalinda Cardona Gargallo,Tunja,15.2,2.57,Bogota,Bogota -> Tunja,139.0,1
+785,José Antonio Casals-Marti,Pereira,23.83,1.99,Pereira,Pereira,0.0,0
+786,Sabina de Antúnez,Manizales,57.35,0.39,Ibague,Ibague -> Manizales,163.0,1
+787,Maricela Benavente Bayo,Ibagué,49.19,2.3,,NO EXISTE EN GRAFO,,0
+788,Hernán Eusebio Anglada Clemente,Bucaramanga,13.57,1.2,Bucaramanga,Bucaramanga,0.0,0
+789,Rodrigo Bosch,Cali,65.18,1.41,Bogota,Bogota -> Cali,458.0,1
+790,Verónica Sans Carnero,Medellín,10.39,1.34,,NO EXISTE EN GRAFO,,0
+791,Heraclio Sanjuan Huerta,Manizales,60.14,0.53,Ibague,Ibague -> Manizales,163.0,1
+792,Anacleto Bernad Pi,Pereira,8.12,2.7,Pereira,Pereira,0.0,0
+793,Celso de Alegre,Cali,70.51,2.25,Bogota,Bogota -> Cali,458.0,1
+794,Dulce Vicens-Piñol,Tunja,66.56,1.7,Bogota,Bogota -> Tunja,139.0,1
+795,Bernardo Amorós Cabeza,Cartagena,41.0,2.69,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+796,Amelia Tamarit Barrios,Manizales,58.93,2.75,Ibague,Ibague -> Manizales,163.0,1
+797,Lara Salom,Armenia,9.44,1.18,Ibague,Ibague -> Armenia,5.4,1
+798,Emiliano Montserrat-Moliner,Ibagué,1.73,1.42,,NO EXISTE EN GRAFO,,0
+799,Mercedes Valentín Martin,Santa Marta,43.21,2.78,,NO EXISTE EN GRAFO,,0
+800,Gonzalo Escudero Nebot,Pasto,54.27,1.11,Bogota,Bogota -> Cali -> Pasto,844.0,2
+801,Emelina Tudela Galiano,Manizales,25.51,2.21,Ibague,Ibague -> Manizales,163.0,1
+802,Patricia Soler Galán,Pasto,42.51,1.16,Bogota,Bogota -> Cali -> Pasto,844.0,2
+803,Natividad Barral Millán,Cali,51.6,0.92,Bogota,Bogota -> Cali,458.0,1
+804,Luís Arana Bravo,Pasto,22.45,2.96,Bogota,Bogota -> Cali -> Pasto,844.0,2
+805,Cándido Novoa Cueto,Manizales,45.59,1.45,Ibague,Ibague -> Manizales,163.0,1
+806,Tristán Nogueira Fortuny,Bogotá,13.83,1.61,,NO EXISTE EN GRAFO,,0
+807,Heraclio Aguilar Toledo,Santa Marta,10.73,0.34,,NO EXISTE EN GRAFO,,0
+808,Anselma Escolano Galán,Cali,65.54,0.09,Bogota,Bogota -> Cali,458.0,1
+809,Berto Enríquez Palau,Tunja,55.93,2.21,Bogota,Bogota -> Tunja,139.0,1
+810,Soledad Viñas Guillén,Barranquilla,27.05,1.84,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+811,Carmen Mesa Durán,Neiva,17.11,2.85,Ibague,Ibague -> Neiva,211.0,1
+812,Sebastian Arcos González,Manizales,39.42,0.01,Ibague,Ibague -> Manizales,163.0,1
+813,Tomás de Sedano,Tunja,66.88,1.34,Bogota,Bogota -> Tunja,139.0,1
+814,Joaquín Elías Mayo,Manizales,69.86,2.38,Ibague,Ibague -> Manizales,163.0,1
+815,Felicidad Huertas Reig,Bogotá,19.02,1.87,,NO EXISTE EN GRAFO,,0
+816,Noa Chamorro Nogués,Barranquilla,4.38,0.43,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+817,Reynaldo Anglada Amorós,Cali,53.41,0.49,Bogota,Bogota -> Cali,458.0,1
+818,Glauco Mariscal-Narváez,Bucaramanga,65.4,2.83,Bucaramanga,Bucaramanga,0.0,0
+819,Esmeralda Guerrero Heredia,Medellín,47.63,1.16,,NO EXISTE EN GRAFO,,0
+820,Manu Blanca Ropero,Pereira,58.07,0.43,Pereira,Pereira,0.0,0
+821,Che Reig Dávila,Villavicencio,23.91,2.3,Bogota,Bogota -> Villavicencio,123.0,1
+822,Nicolasa Guillen Roldán,Armenia,43.77,0.11,Ibague,Ibague -> Armenia,5.4,1
+823,Lorenzo Esteve Escribano,Ibagué,79.64,0.75,,NO EXISTE EN GRAFO,,0
+824,Pepito del Casanova,Armenia,74.88,0.22,Ibague,Ibague -> Armenia,5.4,1
+825,Manuelita Santos Escolano,Barranquilla,61.49,2.59,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+826,Miguel Ángel Leal Navarrete,Ibagué,33.18,0.7,,NO EXISTE EN GRAFO,,0
+827,Pánfilo Perera Gil,Ibagué,59.78,0.9,,NO EXISTE EN GRAFO,,0
+828,Edgardo Peñas Moll,Medellín,16.61,2.31,,NO EXISTE EN GRAFO,,0
+829,Luis Ángel Pera,Cali,32.84,0.58,Bogota,Bogota -> Cali,458.0,1
+830,Rosa María Rosell,Tunja,7.94,0.16,Bogota,Bogota -> Tunja,139.0,1
+831,Constanza Tejada Jara,Santa Marta,37.99,0.97,,NO EXISTE EN GRAFO,,0
+832,Ana Belén Llanos Corominas,Villavicencio,4.25,1.35,Bogota,Bogota -> Villavicencio,123.0,1
+833,Quirino Duarte Cabeza,Armenia,50.09,1.37,Ibague,Ibague -> Armenia,5.4,1
+834,Encarnita Cámara Macías,Cali,13.04,2.71,Bogota,Bogota -> Cali,458.0,1
+835,Marcial Nadal Río,Pasto,63.4,0.59,Bogota,Bogota -> Cali -> Pasto,844.0,2
+836,Ariel Tovar,Santa Marta,12.14,0.52,,NO EXISTE EN GRAFO,,0
+837,Quirino Tormo Rivera,Cali,10.7,1.57,Bogota,Bogota -> Cali,458.0,1
+838,Natividad del Izaguirre,Pereira,50.98,1.61,Pereira,Pereira,0.0,0
+839,Sol Flor,Ibagué,47.5,1.11,,NO EXISTE EN GRAFO,,0
+840,Segismundo Falcón Merino,Santa Marta,37.79,1.78,,NO EXISTE EN GRAFO,,0
+841,Ale Marín Vall,Cali,67.53,0.25,Bogota,Bogota -> Cali,458.0,1
+842,Sofía Mendizábal,Medellín,26.27,0.75,,NO EXISTE EN GRAFO,,0
+843,Anastasio de Soriano,Pasto,57.63,2.94,Bogota,Bogota -> Cali -> Pasto,844.0,2
+844,Isidora Zabaleta Ramis,Santa Marta,74.82,2.8,,NO EXISTE EN GRAFO,,0
+845,Rosalinda Pont Yáñez,Pasto,20.67,0.71,Bogota,Bogota -> Cali -> Pasto,844.0,2
+846,Iris Atienza Barroso,Pereira,68.43,1.87,Pereira,Pereira,0.0,0
+847,Susana Blazquez Fernandez,Bogotá,75.14,1.13,,NO EXISTE EN GRAFO,,0
+848,Raúl Santos,Bogotá,54.16,2.29,,NO EXISTE EN GRAFO,,0
+849,Aarón Cano Lladó,Manizales,79.28,1.94,Ibague,Ibague -> Manizales,163.0,1
+850,Ramona Torrecilla Calvet,Barranquilla,18.71,0.03,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+851,María Luisa Borrás Hervia,Pereira,17.27,2.33,Pereira,Pereira,0.0,0
+852,Manuela del Moya,Pereira,72.59,0.05,Pereira,Pereira,0.0,0
+853,Guiomar Torrents,Tunja,2.41,1.31,Bogota,Bogota -> Tunja,139.0,1
+854,Cristian Montserrat Ribera,Armenia,54.34,0.63,Ibague,Ibague -> Armenia,5.4,1
+855,Olimpia Almansa Moraleda,Bogotá,14.54,1.38,,NO EXISTE EN GRAFO,,0
+856,Heliodoro Polo Neira,Santa Marta,78.64,1.43,,NO EXISTE EN GRAFO,,0
+857,Violeta Casandra Alberdi Chico,Pereira,41.81,2.84,Pereira,Pereira,0.0,0
+858,Inmaculada Pinedo Báez,Neiva,13.26,2.75,Ibague,Ibague -> Neiva,211.0,1
+859,Ciríaco del Aliaga,Medellín,45.98,1.53,,NO EXISTE EN GRAFO,,0
+860,Tadeo Canals,Cali,2.57,2.66,Bogota,Bogota -> Cali,458.0,1
+861,Inés de Peña,Bucaramanga,7.0,2.25,Bucaramanga,Bucaramanga,0.0,0
+862,Javiera Campillo Losada,Neiva,22.32,1.55,Ibague,Ibague -> Neiva,211.0,1
+863,Susanita de Cerdán,Bucaramanga,16.47,2.53,Bucaramanga,Bucaramanga,0.0,0
+864,Elba Sans Porta,Pereira,28.58,1.67,Pereira,Pereira,0.0,0
+865,Bonifacio Barrena,Bogotá,4.75,0.43,,NO EXISTE EN GRAFO,,0
+866,Mamen Barros,Neiva,67.53,1.97,Ibague,Ibague -> Neiva,211.0,1
+867,Eugenio Noriega Pont,Barranquilla,4.29,0.31,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+868,Prudencio Carrasco Olivé,Bogotá,41.58,2.14,,NO EXISTE EN GRAFO,,0
+869,Ainara Pineda Jimenez,Cartagena,60.54,2.69,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+870,Estrella Flavia Batlle Larrañaga,Bogotá,73.77,2.89,,NO EXISTE EN GRAFO,,0
+871,Rafa Palma Arnau,Armenia,45.18,0.28,Ibague,Ibague -> Armenia,5.4,1
+872,Genoveva Barceló,Tunja,68.38,0.4,Bogota,Bogota -> Tunja,139.0,1
+873,Pancho Palomo Quintero,Armenia,1.58,2.33,Ibague,Ibague -> Armenia,5.4,1
+874,Quirino Laguna Valenzuela,Medellín,24.63,2.73,,NO EXISTE EN GRAFO,,0
+875,Jimena Clemente Hernández,Pasto,75.72,2.95,Bogota,Bogota -> Cali -> Pasto,844.0,2
+876,Nydia Ferrando Cabanillas,Pasto,51.66,1.24,Bogota,Bogota -> Cali -> Pasto,844.0,2
+877,Luciana Sonia Roman Hervás,Cartagena,38.03,1.49,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+878,Baltasar Amat Ferrández,Bogotá,37.43,1.2,,NO EXISTE EN GRAFO,,0
+879,Felix Calleja Lerma,Tunja,40.79,1.93,Bogota,Bogota -> Tunja,139.0,1
+880,Eusebia María Del Carmen Vilanova Ballester,Bogotá,43.6,1.56,,NO EXISTE EN GRAFO,,0
+881,Tania del Quintana,Armenia,34.95,2.93,Ibague,Ibague -> Armenia,5.4,1
+882,Ulises Benavent Feijoo,Ibagué,75.99,2.55,,NO EXISTE EN GRAFO,,0
+883,Alberto Yáñez Amigó,Bucaramanga,1.01,1.11,Bucaramanga,Bucaramanga,0.0,0
+884,Herberto Duran Ros,Bucaramanga,3.86,0.88,Bucaramanga,Bucaramanga,0.0,0
+885,Ángeles Casanovas Salmerón,Pasto,11.39,0.25,Bogota,Bogota -> Cali -> Pasto,844.0,2
+886,Jessica Pinilla Crespi,Santa Marta,54.77,1.62,,NO EXISTE EN GRAFO,,0
+887,Maximiano del Andreu,Barranquilla,37.02,1.69,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+888,Juan Luis Huerta Amorós,Bogotá,20.79,2.42,,NO EXISTE EN GRAFO,,0
+889,Mateo del Barreda,Barranquilla,31.4,1.84,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+890,Arcelia Pombo Barberá,Bucaramanga,51.89,0.91,Bucaramanga,Bucaramanga,0.0,0
+891,Juanito Alba-Peña,Armenia,15.47,2.2,Ibague,Ibague -> Armenia,5.4,1
+892,Reyes Vall Mármol,Pereira,21.34,1.76,Pereira,Pereira,0.0,0
+893,Alcides Nogués-Granados,Neiva,27.91,2.41,Ibague,Ibague -> Neiva,211.0,1
+894,Leandra Tomás-Jimenez,Tunja,45.66,2.85,Bogota,Bogota -> Tunja,139.0,1
+895,Tatiana de Palmer,Santa Marta,8.14,1.55,,NO EXISTE EN GRAFO,,0
+896,Aurelia Moll Montero,Ibagué,60.61,0.33,,NO EXISTE EN GRAFO,,0
+897,Cándido de Pons,Bucaramanga,22.13,0.8,Bucaramanga,Bucaramanga,0.0,0
+898,Reina Aroca,Manizales,44.43,2.56,Ibague,Ibague -> Manizales,163.0,1
+899,Felicia Loida Alsina Lluch,Cali,48.6,0.12,Bogota,Bogota -> Cali,458.0,1
+900,Azeneth Fajardo Espejo,Pasto,59.35,2.27,Bogota,Bogota -> Cali -> Pasto,844.0,2
+901,Irma Juanita Bosch Planas,Villavicencio,40.69,1.79,Bogota,Bogota -> Villavicencio,123.0,1
+902,Cecilia Agustín Pujol,Neiva,30.75,1.36,Ibague,Ibague -> Neiva,211.0,1
+903,Teresita América Toledo Cáceres,Pereira,43.3,1.65,Pereira,Pereira,0.0,0
+904,Ariadna Carreño Sabater,Barranquilla,72.76,2.82,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+905,Evaristo Ibáñez,Ibagué,35.51,1.65,,NO EXISTE EN GRAFO,,0
+906,Juan Manuel Ferrán Montenegro,Cali,23.1,2.65,Bogota,Bogota -> Cali,458.0,1
+907,Aureliano Cózar Valderrama,Cartagena,62.25,1.33,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+908,Lucía Bermudez Mariscal,Ibagué,22.62,2.5,,NO EXISTE EN GRAFO,,0
+909,Marino Carnero Lopez,Manizales,45.36,1.06,Ibague,Ibague -> Manizales,163.0,1
+910,Angelita Criado Puente,Villavicencio,46.26,2.42,Bogota,Bogota -> Villavicencio,123.0,1
+911,Aristides Acevedo Castells,Armenia,41.83,1.89,Ibague,Ibague -> Armenia,5.4,1
+912,Pío Mora,Bucaramanga,59.08,2.45,Bucaramanga,Bucaramanga,0.0,0
+913,Cándida Iglesias Fuentes,Medellín,60.98,2.33,,NO EXISTE EN GRAFO,,0
+914,Leonor Bárbara Abril Orozco,Cartagena,31.67,2.6,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+915,Maxi Tamayo,Medellín,38.77,1.53,,NO EXISTE EN GRAFO,,0
+916,Claudia Cobo Ortega,Neiva,49.12,1.64,Ibague,Ibague -> Neiva,211.0,1
+917,Francisca Cano Ponce,Ibagué,28.18,0.31,,NO EXISTE EN GRAFO,,0
+918,Alba Carranza Galván,Neiva,37.89,0.9,Ibague,Ibague -> Neiva,211.0,1
+919,Maristela Domingo,Pereira,20.23,0.6,Pereira,Pereira,0.0,0
+920,Modesta Santiago Vicens,Neiva,79.78,1.2,Ibague,Ibague -> Neiva,211.0,1
+921,Guadalupe Dueñas Somoza,Santa Marta,17.01,2.82,,NO EXISTE EN GRAFO,,0
+922,Gilberto Gallego,Barranquilla,65.2,1.44,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+923,Eliana del Ribas,Pereira,42.65,0.49,Pereira,Pereira,0.0,0
+924,Calisto Poza Almeida,Barranquilla,38.94,1.15,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+925,Efraín Valenciano Requena,Neiva,57.57,1.71,Ibague,Ibague -> Neiva,211.0,1
+926,Antonia Cervantes Baró,Bogotá,59.39,0.68,,NO EXISTE EN GRAFO,,0
+927,Delia Maza,Cali,13.09,0.09,Bogota,Bogota -> Cali,458.0,1
+928,Amado Norberto Azcona Lloret,Manizales,26.9,0.89,Ibague,Ibague -> Manizales,163.0,1
+929,Paula Puig Barón,Bogotá,66.82,0.24,,NO EXISTE EN GRAFO,,0
+930,Juan Pablo Múgica Perelló,Ibagué,73.83,1.8,,NO EXISTE EN GRAFO,,0
+931,Teófila Lobato,Barranquilla,15.67,1.97,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+932,Raimundo Sebastián Feliu,Cartagena,69.4,2.7,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+933,Cristian Figueras Prada,Pasto,11.15,2.84,Bogota,Bogota -> Cali -> Pasto,844.0,2
+934,Cloe Muñoz Vila,Villavicencio,54.46,1.77,Bogota,Bogota -> Villavicencio,123.0,1
+935,Cecilia Cobo,Bucaramanga,51.35,2.14,Bucaramanga,Bucaramanga,0.0,0
+936,Chita Cases Roselló,Medellín,42.58,1.03,,NO EXISTE EN GRAFO,,0
+937,Maura del Rosales,Cartagena,12.07,2.08,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+938,Sigfrido Zamora Gomis,Pereira,13.65,1.53,Pereira,Pereira,0.0,0
+939,Ismael Checa Abril,Bucaramanga,15.54,1.14,Bucaramanga,Bucaramanga,0.0,0
+940,Rosalía de Gallo,Cartagena,41.29,2.94,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+941,Herberto Marin Priego,Cartagena,11.52,0.32,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+942,Jose Luis Gual Hidalgo,Neiva,15.66,0.31,Ibague,Ibague -> Neiva,211.0,1
+943,Zoraida Zabala Checa,Ibagué,54.38,0.48,,NO EXISTE EN GRAFO,,0
+944,Cayetana Rios Martorell,Bogotá,60.0,0.17,,NO EXISTE EN GRAFO,,0
+945,Apolonia Bayo Salvà,Barranquilla,55.15,2.82,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+946,Nico Trujillo Guillen,Bucaramanga,38.62,2.5,Bucaramanga,Bucaramanga,0.0,0
+947,Adolfo Maestre Cañizares,Pereira,53.46,1.27,Pereira,Pereira,0.0,0
+948,María Ángeles Baquero Galindo,Tunja,53.07,1.06,Bogota,Bogota -> Tunja,139.0,1
+949,Anacleto Olivera García,Manizales,73.69,0.1,Ibague,Ibague -> Manizales,163.0,1
+950,Flor Adriana Quero Barrena,Barranquilla,31.68,0.32,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+951,Jose Ramón Feliu Andreu,Armenia,39.35,0.23,Ibague,Ibague -> Armenia,5.4,1
+952,Reyes Florentino Sarabia Lorenzo,Pereira,3.05,0.96,Pereira,Pereira,0.0,0
+953,Olga Florinda Uriarte Fábregas,Bucaramanga,13.07,0.21,Bucaramanga,Bucaramanga,0.0,0
+954,Bartolomé del Aguiló,Ibagué,3.08,2.53,,NO EXISTE EN GRAFO,,0
+955,Plinio Monreal-Rey,Bucaramanga,35.32,1.98,Bucaramanga,Bucaramanga,0.0,0
+956,Urbano Gisbert,Tunja,75.73,0.21,Bogota,Bogota -> Tunja,139.0,1
+957,Esther Castell,Santa Marta,67.88,0.15,,NO EXISTE EN GRAFO,,0
+958,Domitila Puig Tomé,Cali,69.24,1.1,Bogota,Bogota -> Cali,458.0,1
+959,Lupe Pozo Arellano,Villavicencio,51.99,2.65,Bogota,Bogota -> Villavicencio,123.0,1
+960,Marita Salas,Villavicencio,63.95,0.76,Bogota,Bogota -> Villavicencio,123.0,1
+961,Dionisia Montoya,Armenia,46.14,1.85,Ibague,Ibague -> Armenia,5.4,1
+962,Rosendo Venceslás Quintana Hervia,Pereira,48.95,1.65,Pereira,Pereira,0.0,0
+963,Francisca Torrijos Montes,Villavicencio,3.46,0.12,Bogota,Bogota -> Villavicencio,123.0,1
+964,Juan Gargallo Melero,Santa Marta,10.88,0.69,,NO EXISTE EN GRAFO,,0
+965,Eustaquio Cortina Tello,Santa Marta,35.81,0.67,,NO EXISTE EN GRAFO,,0
+966,Prudencia Plaza Prats,Armenia,8.39,1.45,Ibague,Ibague -> Armenia,5.4,1
+967,Vera Frías Belda,Santa Marta,12.3,2.72,,NO EXISTE EN GRAFO,,0
+968,Ani Zabala Agustín,Pereira,62.5,0.97,Pereira,Pereira,0.0,0
+969,Pepito Abella,Cartagena,66.96,2.78,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+970,Cirino Rivera Castejón,Armenia,34.78,2.4,Ibague,Ibague -> Armenia,5.4,1
+971,Felipe Viña Fonseca,Cartagena,57.47,1.85,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+972,Dolores Roma Salmerón,Cartagena,56.74,0.58,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+973,Bautista Lozano-Bernat,Pasto,64.19,1.52,Bogota,Bogota -> Cali -> Pasto,844.0,2
+974,Águeda Tejero-Cruz,Neiva,27.0,2.66,Ibague,Ibague -> Neiva,211.0,1
+975,Arsenio Pascual Rius,Barranquilla,28.81,1.92,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+976,Raimundo Camacho Soriano,Pereira,39.17,1.53,Pereira,Pereira,0.0,0
+977,Bibiana Baquero Luz,Tunja,54.88,1.96,Bogota,Bogota -> Tunja,139.0,1
+978,Poncio del Bermejo,Barranquilla,37.98,2.53,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+979,Evelia Esparza-Puerta,Bogotá,54.22,1.3,,NO EXISTE EN GRAFO,,0
+980,Nando Parejo Fernandez,Villavicencio,4.74,0.14,Bogota,Bogota -> Villavicencio,123.0,1
+981,Xiomara Cózar Escudero,Bogotá,31.51,1.98,,NO EXISTE EN GRAFO,,0
+982,Charo Rico Moliner,Santa Marta,57.47,0.75,,NO EXISTE EN GRAFO,,0
+983,Jose Ignacio Bernal Gascón,Cartagena,76.98,1.26,Bucaramanga,Bucaramanga -> Cartagena,623.0,1
+984,Isaura Reyna Guardiola Villena,Medellín,72.08,0.15,,NO EXISTE EN GRAFO,,0
+985,Lola Manola Plaza Bustos,Bogotá,49.73,1.77,,NO EXISTE EN GRAFO,,0
+986,Agustina Conesa Gálvez,Ibagué,34.83,0.58,,NO EXISTE EN GRAFO,,0
+987,Rafael de Ramón,Barranquilla,51.92,0.16,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+988,Dionisia del Barceló,Medellín,19.63,1.4,,NO EXISTE EN GRAFO,,0
+989,Pepita Cózar Garay,Medellín,76.43,1.8,,NO EXISTE EN GRAFO,,0
+990,Olga Maxi Miguel Sarmiento,Armenia,70.32,0.65,Ibague,Ibague -> Armenia,5.4,1
+991,Sabas Carlos-Mora,Barranquilla,5.06,0.85,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+992,Leandra de Roma,Manizales,66.89,1.13,Ibague,Ibague -> Manizales,163.0,1
+993,Sarita Pérez Rivera,Ibagué,44.99,1.56,,NO EXISTE EN GRAFO,,0
+994,Juanito Galvez,Medellín,8.84,1.14,,NO EXISTE EN GRAFO,,0
+995,Bernabé Salinas-Canet,Medellín,6.47,0.93,,NO EXISTE EN GRAFO,,0
+996,Aníbal de Diez,Pasto,77.54,1.57,Bogota,Bogota -> Cali -> Pasto,844.0,2
+997,Manolo Juliá Nogueira,Santa Marta,31.62,0.11,,NO EXISTE EN GRAFO,,0
+998,Tiburcio Berenguer Viana,Cali,66.72,0.02,Bogota,Bogota -> Cali,458.0,1
+999,Tiburcio Varela,Barranquilla,74.44,2.13,Pereira,Pereira -> Medellin -> Barranquilla,992.0,2
+1000,Jose Antonio Villalonga-Calzada,Manizales,78.38,2.54,Ibague,Ibague -> Manizales,163.0,1

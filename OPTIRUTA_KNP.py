@@ -59,6 +59,7 @@ class KnapsackVehiculosOptimizado:
     def knapsack_dp(self, paquetes, capacidad):
         """
         Implementa Knapsack 0/1 usando Programacion Dinamica
+        Maximiza CANTIDAD de paquetes, no peso
         
         Args:
             paquetes: Lista de paquetes con columna 'Peso_kg'
@@ -75,12 +76,13 @@ class KnapsackVehiculosOptimizado:
         # Extraer pesos
         pesos = [float(p['Peso_kg']) for p in paquetes]
         
-        # Tabla DP: dp[i][w] = peso maximo usando primeros i items con capacidad w
+        # Tabla DP: dp[i][w] = cantidad maxima de items usando primeros i items con capacidad w
         # Usar enteros para capacidad (escalar a gramos para evitar problemas con floats)
         cap_int = int(capacidad * 1000)
         
         # Inicializar DP
-        dp = [[0 for _ in range(cap_int + 1)] for _ in range(n + 1)]
+        dp = [[-1 for _ in range(cap_int + 1)] for _ in range(n + 1)]
+        dp[0][0] = 0
         
         # Llenar tabla DP
         for i in range(1, n + 1):
@@ -88,21 +90,31 @@ class KnapsackVehiculosOptimizado:
             
             for w in range(cap_int + 1):
                 # No tomar el item
-                dp[i][w] = dp[i-1][w]
+                if dp[i-1][w] != -1:
+                    dp[i][w] = max(dp[i][w], dp[i-1][w])
                 
                 # Tomar el item si cabe
-                if peso_item <= w:
-                    dp[i][w] = max(dp[i][w], dp[i-1][w - peso_item] + peso_item)
+                if w >= peso_item and dp[i-1][w - peso_item] != -1:
+                    dp[i][w] = max(dp[i][w], dp[i-1][w - peso_item] + 1)
+        
+        # Encontrar la capacidad maxima usada
+        max_cantidad = 0
+        w_mejor = 0
+        for w in range(cap_int + 1):
+            if dp[n][w] > max_cantidad:
+                max_cantidad = dp[n][w]
+                w_mejor = w
         
         # Backtracking para encontrar que items fueron seleccionados
-        w = cap_int
+        w = w_mejor
         indices_seleccionados = []
         
         for i in range(n, 0, -1):
-            if dp[i][w] != dp[i-1][w]:
-                indices_seleccionados.append(i - 1)
+            if w >= 0 and dp[i][w] != -1 and (w == 0 or dp[i-1][w] == -1 or dp[i][w] != dp[i-1][w]):
                 peso_item = int(pesos[i-1] * 1000)
-                w -= peso_item
+                if w >= peso_item and dp[i-1][w - peso_item] != -1 and dp[i-1][w - peso_item] == dp[i][w] - 1:
+                    indices_seleccionados.append(i - 1)
+                    w -= peso_item
         
         indices_seleccionados.reverse()
         
@@ -139,24 +151,24 @@ class KnapsackVehiculosOptimizado:
         
         # Empacar cada tipo
         print("\n" + "-"*100)
-        print("MOTOS (1 ciudad, max 3 motos por ciudad, capacidad 15kg)")
+        print("MOTOS (1 ciudad, capacidad 30kg)")
         print("-"*100)
         self._empacar_motos(paquetes_por_tipo['Moto'])
         
         print("\n" + "-"*100)
-        print("FURGONETAS (2 ciudades, 1 por trayecto, capacidad 35kg)")
+        print("FURGONETAS (2 ciudades, 1 por trayecto, capacidad 1000kg)")
         print("-"*100)
         self._empacar_furgonetas(paquetes_por_tipo['Furgoneta'])
         
         print("\n" + "-"*100)
-        print("CAMIONES (3+ ciudades, 2 por trayecto, capacidad 3000kg)")
+        print("CAMIONES (3+ ciudades, capacidad 3000kg)")
         print("-"*100)
         self._empacar_camiones(paquetes_por_tipo['Camion'])
         
         return True
     
     def _empacar_motos(self, paquetes):
-        """Empaca motos usando Knapsack 0/1"""
+        """Empaca motos usando Knapsack 0/1 hasta empacar TODOS"""
         if not paquetes:
             print("Sin paquetes para empacar en motos")
             return
@@ -170,14 +182,15 @@ class KnapsackVehiculosOptimizado:
         paquetes_empacados = 0
         
         for ciudad, paquetes_ciudad in por_ciudad.items():
-            # Ordenar por peso descendente (heuristica)
-            paquetes_ciudad.sort(key=lambda x: x['Peso_kg'], reverse=True)
+            # Ordenar por peso ascendente (para que quepan mejor)
+            paquetes_ciudad.sort(key=lambda x: x['Peso_kg'])
             
-            motos_en_ciudad = 0
             indices_globales_empacados = set()
+            motos_creadas = 0
             
-            while motos_en_ciudad < 20:
-                motos_en_ciudad += 1
+            # Continuar mientras haya paquetes sin empacar
+            while len(indices_globales_empacados) < len(paquetes_ciudad):
+                motos_creadas += 1
                 self.contador_vehiculos['Moto'] += 1
                 id_moto = f"MOTO_{self.contador_vehiculos['Moto']}"
                 
@@ -187,19 +200,18 @@ class KnapsackVehiculosOptimizado:
                     if i not in indices_globales_empacados
                 ]
                 
-                if not paquetes_disponibles:
-                    break
-                
                 # Extraer solo paquetes para Knapsack
                 solo_paquetes = [p for _, p in paquetes_disponibles]
                 
                 # Usar Knapsack 0/1 para empacar optimalmente
                 indices_seleccionados, peso_total = self.knapsack_dp(
-                    solo_paquetes, 15
+                    solo_paquetes, 30
                 )
                 
+                # Si no se empaca nada, tomar el paquete mas ligero (fuerza)
                 if not indices_seleccionados:
-                    break
+                    indices_seleccionados = [0]
+                    peso_total = float(solo_paquetes[0]['Peso_kg'])
                 
                 # Mapear indices de disponibles a globales
                 for idx_local in indices_seleccionados:
@@ -223,17 +235,13 @@ class KnapsackVehiculosOptimizado:
                 })
                 
                 paquetes_empacados += len(paquetes_en_moto)
-                print(f"{id_moto} -> {ciudad}: {len(paquetes_en_moto)} paquetes, {peso_total:.2f}kg / 15kg ({(peso_total/30)*100:.1f}%)")
-            
-            sin_empacar = len(paquetes_ciudad) - len(indices_globales_empacados)
-            if sin_empacar > 0:
-                print(f"Advertencia: {sin_empacar} paquetes no empacados en {ciudad}")
+                print(f"{id_moto} -> {ciudad}: {len(paquetes_en_moto)} paquetes, {peso_total:.2f}kg / 30kg ({(peso_total/30)*100:.1f}%)")
         
         self.stats['paquetes_empacados'] += paquetes_empacados
         print(f"Total motos: {self.contador_vehiculos['Moto']}, Paquetes empacados: {paquetes_empacados}")
     
     def _empacar_furgonetas(self, paquetes):
-        """Empaca furgonetas usando Knapsack 0/1"""
+        """Empaca furgonetas usando Knapsack 0/1 hasta empacar TODOS"""
         if not paquetes:
             print("Sin paquetes para empacar en furgonetas")
             return
@@ -246,17 +254,40 @@ class KnapsackVehiculosOptimizado:
         paquetes_empacados = 0
         
         for ruta, paquetes_ruta in por_ruta.items():
-            paquetes_ruta.sort(key=lambda x: x['Peso_kg'], reverse=True)
+            paquetes_ruta.sort(key=lambda x: x['Peso_kg'])
             
-            # Solo 1 furgoneta por trayecto
-            self.contador_vehiculos['Furgoneta'] += 20
-            id_furgoneta = f"FURGONETA_{self.contador_vehiculos['Furgoneta']}"
+            indices_empacados = set()
+            furgonetas_creadas = 0
             
-            # Knapsack 0/1
-            indices_seleccionados, peso_total = self.knapsack_dp(paquetes_ruta, 1000)
-            
-            if indices_seleccionados:
-                paquetes_en_furgoneta = [paquetes_ruta[i] for i in indices_seleccionados]
+            # Continuar mientras haya paquetes sin empacar
+            while len(indices_empacados) < len(paquetes_ruta):
+                furgonetas_creadas += 1
+                self.contador_vehiculos['Furgoneta'] += 1
+                id_furgoneta = f"FURGONETA_{self.contador_vehiculos['Furgoneta']}"
+                
+                # Filtrar paquetes no empacados
+                paquetes_disponibles = [
+                    (i, p) for i, p in enumerate(paquetes_ruta)
+                    if i not in indices_empacados
+                ]
+                
+                # Extraer solo paquetes para Knapsack
+                solo_paquetes = [p for _, p in paquetes_disponibles]
+                
+                # Knapsack 0/1 con capacidad 1000kg
+                indices_seleccionados, peso_total = self.knapsack_dp(solo_paquetes, 1000)
+                
+                # Si no se empaca nada, tomar el paquete mas ligero (fuerza)
+                if not indices_seleccionados:
+                    indices_seleccionados = [0]
+                    peso_total = float(solo_paquetes[0]['Peso_kg'])
+                
+                # Mapear indices
+                for idx_local in indices_seleccionados:
+                    idx_global = paquetes_disponibles[idx_local][0]
+                    indices_empacados.add(idx_global)
+                
+                paquetes_en_furgoneta = [solo_paquetes[i] for i in indices_seleccionados]
                 ids_paquetes = [str(int(p['ID_Paquete'])) for p in paquetes_en_furgoneta]
                 
                 self.vehiculos.append({
@@ -266,24 +297,20 @@ class KnapsackVehiculosOptimizado:
                     'Num_Ciudades': 2,
                     'Peso_kg': peso_total,
                     'Capacidad_kg': 1000,
-                    'Uso_Capacidad_%': (peso_total / 100) * 100,
+                    'Uso_Capacidad_%': (peso_total / 1000) * 100,
                     'Num_Paquetes': len(paquetes_en_furgoneta),
                     'IDs_Paquetes': ','.join(ids_paquetes),
                     'Km_Ruta': paquetes_ruta[0]['Km_Total']
                 })
                 
                 paquetes_empacados += len(paquetes_en_furgoneta)
-                print(f"{id_furgoneta} -> {ruta}: {len(paquetes_en_furgoneta)} paquetes, {peso_total:.2f}kg / 35kg ({(peso_total/1000)*100:.1f}%)")
-            
-            sin_empacar = len(paquetes_ruta) - len(indices_seleccionados)
-            if sin_empacar > 0:
-                print(f"Advertencia: {sin_empacar} paquetes no empacados en ruta {ruta}")
+                print(f"{id_furgoneta} -> {ruta}: {len(paquetes_en_furgoneta)} paquetes, {peso_total:.2f}kg / 1000kg ({(peso_total/1000)*100:.1f}%)")
         
         self.stats['paquetes_empacados'] += paquetes_empacados
         print(f"Total furgonetas: {self.contador_vehiculos['Furgoneta']}, Paquetes empacados: {paquetes_empacados}")
     
     def _empacar_camiones(self, paquetes):
-        """Empaca camiones usando Knapsack 0/1"""
+        """Empaca camiones usando Knapsack 0/1 hasta empacar TODOS"""
         if not paquetes:
             print("Sin paquetes para empacar en camiones")
             return
@@ -296,39 +323,42 @@ class KnapsackVehiculosOptimizado:
         paquetes_empacados = 0
         
         for ruta, paquetes_ruta in por_ruta.items():
-            paquetes_ruta.sort(key=lambda x: x['Peso_kg'], reverse=True)
+            paquetes_ruta.sort(key=lambda x: x['Peso_kg'])
             
-            camiones_en_ruta = 0
             indices_empacados = set()
+            camiones_creados = 0
             
-            while camiones_en_ruta < 2:
-                camiones_en_ruta += 1
+            # Continuar mientras haya paquetes sin empacar
+            while len(indices_empacados) < len(paquetes_ruta):
+                camiones_creados += 1
                 self.contador_vehiculos['Camion'] += 1
                 id_camion = f"CAMION_{self.contador_vehiculos['Camion']}"
                 
                 # Filtrar paquetes no empacados
                 paquetes_disponibles = [
-                    p for i, p in enumerate(paquetes_ruta)
+                    (i, p) for i, p in enumerate(paquetes_ruta)
                     if i not in indices_empacados
                 ]
                 
-                if not paquetes_disponibles:
-                    break
+                # Extraer solo paquetes para Knapsack
+                solo_paquetes = [p for _, p in paquetes_disponibles]
                 
-                # Knapsack 0/1
+                # Knapsack 0/1 con capacidad 3000kg
                 indices_seleccionados, peso_total = self.knapsack_dp(
-                    paquetes_disponibles, 3000
+                    solo_paquetes, 3000
                 )
                 
+                # Si no se empaca nada, tomar el paquete mas ligero (fuerza)
                 if not indices_seleccionados:
-                    break
+                    indices_seleccionados = [0]
+                    peso_total = float(solo_paquetes[0]['Peso_kg'])
                 
-                paquetes_en_camion = [paquetes_disponibles[i] for i in indices_seleccionados]
-                
-                for p in paquetes_en_camion:
-                    # idx_global = paquetes_ruta.index(p) - removido
+                # Mapear indices
+                for idx_local in indices_seleccionados:
+                    idx_global = paquetes_disponibles[idx_local][0]
                     indices_empacados.add(idx_global)
                 
+                paquetes_en_camion = [solo_paquetes[i] for i in indices_seleccionados]
                 ids_paquetes = [str(int(p['ID_Paquete'])) for p in paquetes_en_camion]
                 
                 self.vehiculos.append({
@@ -346,10 +376,6 @@ class KnapsackVehiculosOptimizado:
                 
                 paquetes_empacados += len(paquetes_en_camion)
                 print(f"{id_camion} -> {ruta}: {len(paquetes_en_camion)} paquetes, {peso_total:.2f}kg / 3000kg ({(peso_total/3000)*100:.1f}%)")
-            
-            sin_empacar = len(paquetes_ruta) - len(indices_empacados)
-            if sin_empacar > 0:
-                print(f"Advertencia: {sin_empacar} paquetes no empacados en ruta {ruta}")
         
         self.stats['paquetes_empacados'] += paquetes_empacados
         print(f"Total camiones: {self.contador_vehiculos['Camion']}, Paquetes empacados: {paquetes_empacados}")

@@ -1,0 +1,12 @@
+Origen,Destino,Km,Tipo
+Barranquilla,Santa_Marta,949.0,Expansion
+Medellin,Barranquilla,753.0,Expansion
+Bucaramanga,Cartagena,623.0,DEPOSITO
+Bogota,Cali,458.0,DEPOSITO
+Cali,Pasto,386.0,Expansion
+Pereira,Medellin,239.0,DEPOSITO
+Ibague,Neiva,211.0,DEPOSITO
+Ibague,Manizales,163.0,DEPOSITO
+Bogota,Tunja,139.0,DEPOSITO
+Bogota,Villavicencio,123.0,DEPOSITO
+Ibague,Armenia,5.4,DEPOSITO

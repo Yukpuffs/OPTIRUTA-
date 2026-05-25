@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OptiRuta+</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container app-container">
+        <aside class="sidebar">
+            <header class="sidebar-header">
+                <h1>OptiRuta+</h1>
+                <p>Simulador de Rutas y Empaque de Vehículos</p>
+            </header>
+
+            <section class="panel-section">
+                <h2>Centros de Distribución (Depósitos Prim)</h2>
+                <div class="deposito-cards" id="depositos-container"></div>
+            </section>
+
+            <section class="panel-section">
+                <h2>Especificación de Flota (Knapsack)</h2>
+                <div class="vehiculos-info">
+                    <div class="vehiculo-card moto">
+                        <div class="v-header"> Moto</div>
+                        <div class="v-body"><p>Límite: <strong>30 kg</strong></p><p>Rutas Locales</p></div>
+                    </div>
+                    <div class="vehiculo-card furgoneta">
+                        <div class="v-header"> Furgoneta</div>
+                        <div class="v-body"><p>Límite: <strong>1000 kg</strong></p><p>1 Trayecto</p></div>
+                    </div>
+                    <div class="vehiculo-card camion">
+                        <div class="v-header"> Camión</div>
+                        <div class="v-body"><p>Límite: <strong>3000 kg</strong></p><p>Múltiples Nodos</p></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="panel-section acciones">
+                <h2> Despachos Disponibles (Dijkstra)</h2>
+                <div class="form-group">
+                    <label for="select-deposito">Seleccionar Nodo de Origen:</label>
+                    <select id="select-deposito">
+                        <option value="Bogota">Bogotá (Depósito Central)</option>
+                        <option value="Ibague">Ibagué (Depósito Centro-Occidente)</option>
+                        <option value="Pereira">Pereira (Depósito Eje Cafetero)</option>
+                        <option value="Bucaramanga">Bucaramanga (Depósito Norte)</option>
+                    </select>
+                </div>
+                <button id="btn-calcular" class="btn-primary">Calcular y Trazar Ruta Óptima</button>
+            </section>
+
+            <section class="panel-section">
+                <h2> Vehículos Asignados para esta Ruta</h2>
+                <div id="lista-vehiculos-detallada" class="lista-vehiculos-dinamica">
+                    <p class="text-placeholder">Selecciona un origen para calcular la carga óptima programada por programación dinámica.</p>
+                </div>
+            </section>
+        </aside>
+
+        <main class="map-container ">
+            <div id="map" class="col-md-8 col-lg-8 col-sm-12"></div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKcypTVJh8tH6bQKraEJxLBVKmQBKuoy8&callback=iniciarMapaMundial" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

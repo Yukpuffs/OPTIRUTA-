@@ -1,0 +1,174 @@
+:root {
+    --bg-main: #f4f6f9;
+    --primary: #a40d9f;
+    --primary-light: #3b82f6;
+    --success: #e9b6ff;
+    --text-dark: #1f2937;
+    --text-muted: #6b7280;
+    --border: #e5e7eb;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    background-color: var(--bg-main);
+    overflow: hidden;
+}
+
+.app-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* PANEL LATERAL */
+.sidebar {
+    width: 400px;
+    background: #ffffff;
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.05);
+}
+
+.sidebar-header {
+    padding: 24px;
+    background: var(--primary);
+    color: #ffffff;
+}
+
+.sidebar-header h1 {
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.sidebar-header p {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.panel-section {
+    padding: 20px;
+    border-bottom: 1px solid var(--border);
+}
+
+.panel-section h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+
+/* CARDS DE DEPÓSITOS */
+.deposito-card {
+    background: var(--bg-main);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 8px;
+}
+
+.deposito-card.active {
+    border-color: var(--primary-light);
+    background: #eff6ff;
+}
+
+.deposito-title {
+    font-weight: bold;
+    color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+}
+
+.deposito-meta {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 4px;
+}
+
+/* SECCIÓN VEHÍCULOS (KNAPSACK) */
+.vehiculos-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.vehiculo-card {
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    font-size: 11px;
+}
+
+.v-header {
+    padding: 6px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.moto .v-header { background-color: #ff00d9; }
+.furgoneta .v-header { background-color: #f59e0b; }
+.camion .v-header { background-color: #8044ef; }
+
+.v-body {
+    padding: 8px;
+    background: #fff;
+    text-align: center;
+}
+
+/* ACCIONES Y FORMULARIOS */
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 6px;
+    color: var(--text-dark);
+}
+
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background-color: white;
+}
+
+.btn-primary {
+    width: 100%;
+    background: var(--success);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-primary:hover {
+    background: #a700d5;
+}
+
+/* CONTENEDOR MAPA */
+.map-container {
+    flex-grow: 1;
+    height: 100%;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+

@@ -23,4 +23,7 @@ Las ciudades contempladas para el sistema son: <br>
 Para este proyecto que hace uso de diferentes algoritmos como: Prim, Knapsack y Dijkstra. 
 Su función en el frontend es mostrar las rutas mas cercanas a cada deposito principal con google maps, los distintos tipos de vehiculos con sus capacidades y al final como se organizan cada uno de los paquetes en los vehiculos y que ruta toman.
 
-<video src= "opti.mp4 " controls type="video/webm"></video>
+<video width="800" controls>
+  <source src="./opti.mp4" type="video/mp4">
+  Tu navegador no soporta videos.
+</video>

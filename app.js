@@ -1,5 +1,103 @@
+// ------------------------------------------------------------------------------- MIN HEAP IMPLEMENTATION ------------------------------------------------------------------------
+class MinHeap {
+    constructor() {
+        this.heap = [];
+    }
 
-const aristasGrafo = [
+    push(item) {
+        this.heap.push(item);
+        this.bubbleUp(this.heap.length - 1);
+    }
+
+    pop() {
+        if (this.heap.length === 0) return null;
+        const min = this.heap[0];
+        const last = this.heap.pop();
+        if (this.heap.length > 0) {
+            this.heap[0] = last;
+            this.bubbleDown(0);
+        }
+        return min;
+    }
+
+    isEmpty() {
+        return this.heap.length === 0;
+    }
+
+    bubbleUp(i) {
+        while (i > 0) {
+            const parent = Math.floor((i - 1) / 2);
+            if (this.heap[parent].peso <= this.heap[i].peso) break;
+            [this.heap[parent], this.heap[i]] = [this.heap[i], this.heap[parent]];
+            i = parent;
+        }
+    }
+
+    bubbleDown(i) {
+        while (2 * i + 1 < this.heap.length) {
+            let smallest = i;
+            const left = 2 * i + 1;
+            const right = 2 * i + 2;
+            
+            if (this.heap[left].peso < this.heap[smallest].peso) smallest = left;
+            if (right < this.heap.length && this.heap[right].peso < this.heap[smallest].peso) smallest = right;
+            
+            if (smallest === i) break;
+            [this.heap[i], this.heap[smallest]] = [this.heap[smallest], this.heap[i]];
+            i = smallest;
+        }
+    }
+}
+
+// ------------------------------------------------------------------------------- CACHE MANAGER -------------------------------------------------------------------------------
+class CacheManager {
+    constructor() {
+        this.rutas = new Map();
+        this.knapsack = new Map();
+    }
+
+    obtenerRuta(origen, destino) {
+        const clave = `${origen}->${destino}`;
+        return this.rutas.get(clave);
+    }
+
+    guardarRuta(origen, destino, ruta) {
+        const clave = `${origen}->${destino}`;
+        this.rutas.set(clave, ruta);
+    }
+
+    existeRuta(origen, destino) {
+        const clave = `${origen}->${destino}`;
+        return this.rutas.has(clave);
+    }
+
+    obtenerKnapsack(paquetes, capacidad) {
+        const clave = this.generarClaveKnapsack(paquetes, capacidad);
+        return this.knapsack.get(clave);
+    }
+
+    guardarKnapsack(paquetes, capacidad, resultado) {
+        const clave = this.generarClaveKnapsack(paquetes, capacidad);
+        this.knapsack.set(clave, resultado);
+    }
+
+    existeKnapsack(paquetes, capacidad) {
+        const clave = this.generarClaveKnapsack(paquetes, capacidad);
+        return this.knapsack.has(clave);
+    }
+
+    generarClaveKnapsack(paquetes, capacidad) {
+        const ids = paquetes.map(p => p.id).sort().join(',');
+        return `${ids}|${capacidad}`;
+    }
+
+    limpiarKnapsack() {
+        this.knapsack.clear();
+    }
+}
+
+// ==================== GRAPH DATA ====================
+const aristasGrafo = [ // Graph with all origin and destiny cities
     { peso: 458, origen: "Bogota", destino: "Cali" },
     { peso: 418, origen: "Bogota", destino: "Medellin" },
     { peso: 239, origen: "Medellin", destino: "Pereira" },
@@ -21,7 +119,7 @@ const aristasGrafo = [
     { peso: 139, origen: "Bogota", destino: "Tunja" }
 ];
 
-const coordenadasCiudades = {
+const coordenadasCiudades = { // Coordinates for google maps
     "Bogota": { lat: 4.7110, lng: -74.0721 },
     "Cali": { lat: 3.4516, lng: -76.5320 },
     "Medellin": { lat: 6.2442, lng: -75.5812 },
@@ -39,22 +137,28 @@ const coordenadasCiudades = {
     "Tunja": { lat: 5.5353, lng: -73.3678 }
 };
 
-const depositosDefinidos = ["Bogota", "Ibague", "Pereira", "Bucaramanga"];
+const depositosDefinidos = ["Bogota", "Ibague", "Pereira", "Bucaramanga"]; // Main distribution centers from which the packages will be shipped
 
+// ------------------------------------------------------------------------------- GLOBAL STATE -------------------------------------------------------------------------------
 let map = null;
-let datasetCompletoCSV = []; 
+let datasetCompletoCSV = []; // All info of the CSV
+let paquetesPorCiudad = {}; // Packages grouped by city for efficient processing
+let ciudadesValidas = new Set(); // Set of valid cities for O(1) lookup
 let lineasRuta = [];
 let marcadoresDinamicos = [];
-let adyacenciaMST = {}; 
+let adyacenciaMST = {}; // MST: all the cities that were selected as the best route
+let grafoMST = {}; // Copy of MST for Dijkstra algorithm
+let cache = new CacheManager(); // Cache manager for routes and knapsack results
 
+// ------------------------------------------------------------------------------- UTILITY FUNCTIONS -------------------------------------------------------------------------------
 function limpiarTextoCiudad(texto) {
     if (!texto) return "";
     return texto.normalize("NFD")
                 .replace(/[\u0300-\u036f]/g, "")
-                .replace(" ", "_");
+                .replace(/ /g, "_");
 }
 
-//-------------------------------------------------------------------------------------Load info for dataset.json------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------- LOAD DATASET FROM JSON -------------------------------------------------------------------------------
 async function cargarDatasetInstantaneo() {
     const statusLabel = document.getElementById("csv-status");
     try {
@@ -63,31 +167,49 @@ async function cargarDatasetInstantaneo() {
         
         const datosCargados = await respuesta.json();
         
-        datasetCompletoCSV = datosCargados.map(p => ({
-            ID_Paquete: p.ID_Paquete,
-            Cliente: p.Cliente,
-            Ciudad_Destino: p.Ciudad_Destino,
-            Peso_kg: parseFloat(p.Peso_kg) || 0
-        }));
+        datasetCompletoCSV = [];        // Optimized: normalize and group by city in one pass
+        paquetesPorCiudad = {};
+        
+        datosCargados.forEach(p => {
+            const ciudadNormalizada = limpiarTextoCiudad(p.Ciudad_Destino);
+            const peso = parseFloat(p.Peso_kg) || 1.0;
+            
+            const paquete = {
+                ID_Paquete: p.ID_Paquete,
+                Cliente: p.Cliente,
+                Ciudad_Destino: ciudadNormalizada,
+                Peso_kg: peso
+            };
+            
+            datasetCompletoCSV.push(paquete);
+            
+            if (!paquetesPorCiudad[ciudadNormalizada]) {      // Group packages by city
+                paquetesPorCiudad[ciudadNormalizada] = [];
+            }
+            paquetesPorCiudad[ciudadNormalizada].push(paquete);
+        });
 
         statusLabel.innerText = `Base Conectada: ${datasetCompletoCSV.length} registros cargados.`;
         statusLabel.style.color = "#16a34a";
 
     } catch (error) {
-        console.error(error);
         statusLabel.innerText = "Error al mapear el archivo dataset.json local.";
         statusLabel.style.color = "#dc2626";
     }
 }
 
-//-----------------------------------------------------------------------------------Prim Algorithm-------------------------------------------------------------------------------------------
-
+// ------------------------------------------------------------------------------- PRIM ALGORITHM (OPTIMIZED WITH MIN HEAP) -------------------------------------------------------------------------------
 function calcularPrimMultiDeposito() {
     let visitados = new Set(depositosDefinidos);
-    let colaPrioridad = [];
+    let colaPrioridad = new MinHeap(); // Use Min Heap instead of array with sort
 
-    Object.keys(coordenadasCiudades).forEach(c => adyacenciaMST[c] = []);
+    // Initialize MST adjacency lists
+    Object.keys(coordenadasCiudades).forEach(c => {
+        adyacenciaMST[c] = [];
+        grafoMST[c] = [];
+    });
 
+    // Build complete graph with adjacency list representation
     let grafoCompleto = {};
     Object.keys(coordenadasCiudades).forEach(c => grafoCompleto[c] = []);
     aristasGrafo.forEach(a => {
@@ -95,94 +217,142 @@ function calcularPrimMultiDeposito() {
         grafoCompleto[a.destino].push({ destino: a.origen, peso: a.peso });
     });
 
+    // Add initial candidates from all deposits
     depositosDefinidos.forEach(dep => {
         grafoCompleto[dep].forEach(vecino => {
             if (!visitados.has(vecino.destino)) {
-                colaPrioridad.push({ peso: vecino.peso, origen: dep, destino: vecino.destino });
+                colaPrioridad.push({ 
+                    peso: vecino.peso, 
+                    origen: dep, 
+                    destino: vecino.destino 
+                });
             }
         });
     });
 
-    while (colaPrioridad.length > 0) {
-        colaPrioridad.sort((a, b) => a.peso - b.peso);
-        let aristaActual = colaPrioridad.shift();
+    while (!colaPrioridad.isEmpty()) {
+        let aristaActual = colaPrioridad.pop();
 
         if (visitados.has(aristaActual.destino)) continue;
         visitados.add(aristaActual.destino);
 
-        adyacenciaMST[aristaActual.origen].push({ destino: aristaActual.destino, peso: aristaActual.peso });
-        adyacenciaMST[aristaActual.destino].push({ destino: aristaActual.origen, peso: aristaActual.peso });
+        adyacenciaMST[aristaActual.origen].push({ 
+            destino: aristaActual.destino, 
+            peso: aristaActual.peso 
+        });
+        adyacenciaMST[aristaActual.destino].push({ 
+            destino: aristaActual.origen, 
+            peso: aristaActual.peso 
+        });
 
-        grafoCompleto[aristaActual.destino].forEach(vecino => {
+        grafoMST[aristaActual.origen].push({    // Keep copy of MST for Dijkstra
+            destino: aristaActual.destino, 
+            peso: aristaActual.peso 
+        });
+        grafoMST[aristaActual.destino].push({ 
+            destino: aristaActual.origen, 
+            peso: aristaActual.peso 
+        });
+
+        grafoCompleto[aristaActual.destino].forEach(vecino => {         // Explore neighbors of newly added city
             if (!visitados.has(vecino.destino)) {
-                colaPrioridad.push({ peso: vecino.peso, origen: aristaActual.destino, destino: vecino.destino });
+                colaPrioridad.push({ 
+                    peso: vecino.peso, 
+                    origen: aristaActual.destino, 
+                    destino: vecino.destino 
+                });
             }
         });
     }
 }
 
-//-----------------------------------------------------------------------------------Dikstra algorithm------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------- DIJKSTRA ALGORITHM -------------------------------------------------------------------------------
 
 function calcularDijkstra(origen, destino) {
-    let distancias = {}; let predecesores = {};
-    let visitados = new Set(); let cola = [];
+    let distancias = {};
+    let predecesores = {};
+    let visitados = new Set();
+    let cola = new MinHeap(); // Use Min Heap instead of array with sort
 
-    Object.keys(adyacenciaMST).forEach(ciudad => {
-        distancias[ciudad] = Infinity; predecesores[ciudad] = null;
+    // Initialize distances to infinity
+    Object.keys(grafoMST).forEach(ciudad => {
+        distancias[ciudad] = Infinity;
+        predecesores[ciudad] = null;
     });
 
     distancias[origen] = 0;
-    cola.push({ ciudad: origen, dist: 0 });
+    cola.push({ ciudad: origen, dist: 0, peso: 0 });
 
-    while (cola.length > 0) {
-        cola.sort((a, b) => a.dist - b.dist);
-        let { ciudad: u } = cola.shift();
+    while (!cola.isEmpty()) {
+        let { ciudad: u } = cola.pop();
 
         if (visitados.has(u)) continue;
         visitados.add(u);
 
         if (u === destino) break;
 
-        adyacenciaMST[u].forEach(vecino => {
+        // Relax edges
+        grafoMST[u].forEach(vecino => {
             if (!visitados.has(vecino.destino)) {
                 let nuevaDist = distancias[u] + vecino.peso;
                 if (nuevaDist < distancias[vecino.destino]) {
                     distancias[vecino.destino] = nuevaDist;
                     predecesores[vecino.destino] = u;
-                    cola.push({ ciudad: vecino.destino, dist: nuevaDist });
+                    cola.push({ 
+                        ciudad: vecino.destino, 
+                        dist: nuevaDist, 
+                        peso: vecino.peso 
+                    });
                 }
             }
         });
     }
 
-    let camino = []; let actual = destino;
+    // Reconstruct path
+    let camino = [];
+    let actual = destino;
     while (actual !== null) {
-        camino.push(actual); actual = predecesores[actual];
+        camino.push(actual);
+        actual = predecesores[actual];
     }
     camino.reverse();
+    
     return camino[0] === origen ? camino : [];
 }
+// Wrapper function that checks cache before computing Dijkstra
+function obtenerRuta(origen, destino) {
+    if (cache.existeRuta(origen, destino)) {     // Check if route already computed and cached
+        return cache.obtenerRuta(origen, destino);
+    }
 
-//--------------------------------------------------------------------------------------Knapsack algorithm----------------------------------------------------------------------------------
+    // Compute and cache the route
+    const ruta = calcularDijkstra(origen, destino);
+    cache.guardarRuta(origen, destino, ruta);
+    return ruta;
+}
+
+// ------------------------------------------------------------------------------- KNAPSACK ALGORITHM -------------------------------------------------------------------------------
+
 function optimizarEmpaqueKnapsack(paquetes, capacidadMax) {
     let n = paquetes.length;
     if (n === 0 || capacidadMax <= 0) return { seleccionados: [], pesoTotal: 0 };
 
     let capInt = Math.floor(capacidadMax);
-    let dp = Array(capInt + 1).fill(0);
-    let elecciones = Array(n + 1).fill().map(() => Array(capInt + 1).fill(false));
+    
+    let dp = new Uint32Array(capInt + 1);     // Use Typed Arrays for better memory efficiency and performance
+    let elecciones = Array(n + 1).fill().map(() => new Uint8Array(capInt + 1)); // 1 byte per boolean
 
-    for (let i = 1; i <= n; i++) {
+    for (let i = 1; i <= n; i++) {     // Fill DP table
         let pesoItem = Math.floor(paquetes[i - 1].peso);
         for (let w = capInt; w >= pesoItem; w--) {
             if (dp[w - pesoItem] + 1 > dp[w]) {
                 dp[w] = dp[w - pesoItem] + 1;
-                elecciones[i][w] = true;
+                elecciones[i][w] = 1;
             }
         }
     }
 
-    let w = capInt;
+    let w = capInt;     // Reconstruct selected items
     let seleccionados = [];
     for (let i = n; i > 0; i--) {
         if (elecciones[i][w]) {
@@ -195,7 +365,19 @@ function optimizarEmpaqueKnapsack(paquetes, capacidadMax) {
     return { seleccionados, pesoTotal };
 }
 
-//---------------------------------------------------------------------------------------Google maps-----------------------------------------------------------------------------------------------------------------
+// Wrapper function that checks cache before computing knapsack
+function optimizarConCache(paquetes, capacidad) {
+    if (cache.existeKnapsack(paquetes, capacidad)) {
+        return cache.obtenerKnapsack(paquetes, capacidad);
+    }
+
+    // Compute and cache the result
+    const resultado = optimizarEmpaqueKnapsack(paquetes, capacidad);
+    cache.guardarKnapsack(paquetes, capacidad, resultado);
+    return resultado;
+}
+
+// ------------------------------------------------------------------------------- GOOGLE MAPS INITIALIZATION -------------------------------------------------------------------------------
 function iniciarMapaMundial() {
     map = new google.maps.Map(document.getElementById("map"), {
         center: { lat: 4.5709, lng: -74.2973 },
@@ -204,9 +386,13 @@ function iniciarMapaMundial() {
         streetViewControl: false
     });
 
-    calcularPrimMultiDeposito();
-    renderizarPinesFijosDepositos();
-    cargarDatasetInstantaneo(); 
+    ciudadesValidas = new Set(Object.keys(coordenadasCiudades));
+
+    calcularPrimMultiDeposito();     // Build MST using Prim algorithm
+    
+    renderizarPinesFijosDepositos();     // Render deposit markers and info
+    
+    cargarDatasetInstantaneo();     // Load dataset from JSON file
 }
 
 function renderizarPinesFijosDepositos() {
@@ -230,71 +416,88 @@ function renderizarPinesFijosDepositos() {
     });
 }
 
+function limpiarRender() {
+    lineasRuta.forEach(l => l.setMap(null));    // Clear all route lines from map
+    marcadoresDinamicos.forEach(m => m.setMap(null));    // Clear all dynamic markers from map
+    lineasRuta = [];
+    marcadoresDinamicos = [];
+}
+
+// ------------------------------------------------------------------------------- EVENT LISTENER (OPTIMIZED) -------------------------------------------------------------------------------
 document.getElementById("btn-calcular").addEventListener("click", () => {
     if (!map || datasetCompletoCSV.length === 0) return;
 
     const origenSeleccionado = document.getElementById("select-deposito").value;
 
-    // Limpieza total del render anterior
-    lineasRuta.forEach(l => l.setMap(null)); marcadoresDinamicos.forEach(m => m.setMap(null));
-    lineasRuta = []; marcadoresDinamicos = [];
+    limpiarRender();    // Clean previous render
+    
+    cache.limpiarKnapsack();     // Clear knapsack cache when changing depot 
 
-    let ciudadesDestinoEncontradas = new Set();
     let listaPaquetesFiltrados = [];
-
-    datasetCompletoCSV.forEach(row => {
-        let destinoNormalizado = limpiarTextoCiudad(row.Ciudad_Destino);
-        
-        if (coordenadasCiudades[destinoNormalizado]) {
-            let rutaCalculada = calcularDijkstra(origenSeleccionado, destinoNormalizado);
+    
+    Object.keys(paquetesPorCiudad).forEach(destino => {
+        if (ciudadesValidas.has(destino)) {
+            const ruta = obtenerRuta(origenSeleccionado, destino);
             
-            if (rutaCalculada.length > 0) {
-                ciudadesDestinoEncontradas.add(destinoNormalizado);
-                listaPaquetesFiltrados.push({
-                    id: row.ID_Paquete,
-                    destino: destinoNormalizado,
-                    peso: parseFloat(row.Peso_kg) || 1.0
+            if (ruta.length > 0) {
+                const paquetes = paquetesPorCiudad[destino].map(p => ({                 // Add all packages for this city
+                    id: p.ID_Paquete,
+                    destino: destino,
+                    peso: p.Peso_kg
+                }));
+                listaPaquetesFiltrados.push(...paquetes);
+            }
+        }
+    });
+
+    // Render routes on map
+    const bounds = new google.maps.LatLngBounds();
+    const rutasRenderizadas = new Set(); // Track rendered routes to avoid duplicates
+
+    Object.keys(paquetesPorCiudad).forEach(destino => {
+        if (ciudadesValidas.has(destino)) {
+            const ruta = obtenerRuta(origenSeleccionado, destino); // Cache hit
+            
+            if (ruta.length > 0 && !rutasRenderizadas.has(destino)) {
+                rutasRenderizadas.add(destino);
+                
+                // Convert city names to coordinates
+                let mapaCoordenadas = ruta.map(c => coordenadasCiudades[c]);
+                mapaCoordenadas.forEach(coord => bounds.extend(coord));
+
+                // Draw polyline for the route
+                let polilinea = new google.maps.Polyline({
+                    path: mapaCoordenadas,
+                    geodesic: true,
+                    strokeColor: "#2563eb",
+                    strokeOpacity: 0.8,
+                    strokeWeight: 4
+                });
+                polilinea.setMap(map);
+                lineasRuta.push(polilinea);
+
+                // Add numbered markers for each stop
+                ruta.forEach((ciudad, index) => {
+                    if (index > 0) {
+                        let marker = new google.maps.Marker({
+                            position: coordenadasCiudades[ciudad],
+                            map: map,
+                            label: String(index),
+                            title: `Punto de parada: ${ciudad}`
+                        });
+                        marcadoresDinamicos.push(marker);
+                    }
                 });
             }
         }
     });
 
-    const bounds = new google.maps.LatLngBounds();
-    ciudadesDestinoEncontradas.forEach(destino => {
-        let caminoNodos = calcularDijkstra(origenSeleccionado, destino);
-        let mapaCoordenadas = caminoNodos.map(c => coordenadasCiudades[c]);
-
-        mapaCoordenadas.forEach(coord => bounds.extend(coord));
-
-        let polilinea = new google.maps.Polyline({
-            path: mapaCoordenadas,
-            geodesic: true,
-            strokeColor: "#2563eb",
-            strokeOpacity: 0.8,
-            strokeWeight: 4
-        });
-        polilinea.setMap(map);
-        lineasRuta.push(polilinea);
-
-        caminoNodos.forEach((ciudad, index) => {
-            if (index > 0) {
-                let marker = new google.maps.Marker({
-                    position: coordenadasCiudades[ciudad],
-                    map: map,
-                    label: String(index),
-                    title: `Punto de parada: ${ciudad}`
-                });
-                marcadoresDinamicos.push(marker);
-            }
-        });
-    });
-
-    const contenedorVehiculos = document.getElementById("lista-vehiculos-detallada");
+    const contenedorVehiculos = document.getElementById("lista-vehiculos-detallada");     // Display vehicle assignment results
     contenedorVehiculos.innerHTML = "";
 
-    let pesoTotalPedidos = listaPaquetesFiltrados.reduce((sum, p) => sum + p.peso, 0);
+    let pesoTotalPedidos = listaPaquetesFiltrados.reduce((sum, p) => sum + p.peso, 0);    // Calculate total weight of filtered packages
     
-    let capacidadFlota = 30; 
+    let capacidadFlota = 30;
     let tipoUnidad = "Flota de Motos Urbanas";
 
     if (pesoTotalPedidos > 2000) {
@@ -305,8 +508,10 @@ document.getElementById("btn-calcular").addEventListener("click", () => {
         tipoUnidad = "Furgoneta Mediana Regional";
     }
 
-    let resultadoEmpaque = optimizarEmpaqueKnapsack(listaPaquetesFiltrados, capacidadFlota);
+    // Optimize packing using dynamic programming with cache
+    let resultadoEmpaque = optimizarConCache(listaPaquetesFiltrados, capacidadFlota);
 
+    // Display results
     if (resultadoEmpaque.seleccionados.length === 0) {
         contenedorVehiculos.innerHTML = `<p class="text-placeholder">No se encontraron entregas programadas en el grafo para este origen.</p>`;
     } else {
@@ -324,5 +529,5 @@ document.getElementById("btn-calcular").addEventListener("click", () => {
         `;
     }
 
-    if (!bounds.isEmpty()) map.fitBounds(bounds);
+    if (!bounds.isEmpty()) map.fitBounds(bounds);     // Fit map to bounds of all displayed routes
 });

@@ -1,15 +1,15 @@
 // ------------------------------------------------------------------------------- MIN HEAP IMPLEMENTATION ------------------------------------------------------------------------
-class MinHeap {
+class MinHeap { // Priority queque
     constructor() {
         this.heap = [];
     }
 
-    push(item) {
+    push(item) { // Add an item at the end
         this.heap.push(item);
         this.bubbleUp(this.heap.length - 1);
     }
 
-    pop() {
+    pop() { // return the minimum value
         if (this.heap.length === 0) return null;
         const min = this.heap[0];
         const last = this.heap.pop();
@@ -21,10 +21,10 @@ class MinHeap {
     }
 
     isEmpty() {
-        return this.heap.length === 0;
+        return this.heap.length === 0; // strict equality
     }
 
-    bubbleUp(i) {
+    bubbleUp(i) { // compare the element to its parent
         while (i > 0) {
             const parent = Math.floor((i - 1) / 2);
             if (this.heap[parent].peso <= this.heap[i].peso) break;
@@ -96,7 +96,7 @@ class CacheManager {
     }
 }
 
-// ==================== GRAPH DATA ====================
+// ------------------------------------------------------------------------------- GRAPH DATA -------------------------------------------------------------------------------
 const aristasGrafo = [ // Graph with all origin and destiny cities
     { peso: 458, origen: "Bogota", destino: "Cali" },
     { peso: 418, origen: "Bogota", destino: "Medellin" },
@@ -143,7 +143,7 @@ const depositosDefinidos = ["Bogota", "Ibague", "Pereira", "Bucaramanga"]; // Ma
 let map = null;
 let datasetCompletoCSV = []; // All info of the CSV
 let paquetesPorCiudad = {}; // Packages grouped by city for efficient processing
-let ciudadesValidas = new Set(); // Set of valid cities for O(1) lookup
+let ciudadesValidas = new Set(); 
 let lineasRuta = [];
 let marcadoresDinamicos = [];
 let adyacenciaMST = {}; // MST: all the cities that were selected as the best route
@@ -167,7 +167,7 @@ async function cargarDatasetInstantaneo() {
         
         const datosCargados = await respuesta.json();
         
-        datasetCompletoCSV = [];        // Optimized: normalize and group by city in one pass
+        datasetCompletoCSV = [];        
         paquetesPorCiudad = {};
         
         datosCargados.forEach(p => {
@@ -198,10 +198,10 @@ async function cargarDatasetInstantaneo() {
     }
 }
 
-// ------------------------------------------------------------------------------- PRIM ALGORITHM (OPTIMIZED WITH MIN HEAP) -------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------- PRIM ALGORITHM  -------------------------------------------------------------------------------
 function calcularPrimMultiDeposito() {
     let visitados = new Set(depositosDefinidos);
-    let colaPrioridad = new MinHeap(); // Use Min Heap instead of array with sort
+    let colaPrioridad = new MinHeap(); // Use Min Heap 
 
     // Initialize MST adjacency lists
     Object.keys(coordenadasCiudades).forEach(c => {
@@ -272,10 +272,9 @@ function calcularDijkstra(origen, destino) {
     let distancias = {};
     let predecesores = {};
     let visitados = new Set();
-    let cola = new MinHeap(); // Use Min Heap instead of array with sort
+    let cola = new MinHeap(); // Use Min Heap 
 
-    // Initialize distances to infinity
-    Object.keys(grafoMST).forEach(ciudad => {
+    Object.keys(grafoMST).forEach(ciudad => {     // Initialize distances to infinity
         distancias[ciudad] = Infinity;
         predecesores[ciudad] = null;
     });
